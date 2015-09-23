@@ -1,0 +1,72 @@
+title Authentication Sequence
+
+
+parallel {
+    note Right of Menu: CreateMember
+    Menu->MemberController: MenuChoice(UserInput)
+
+    MemberController->Menu: GetMemberInfo() - returns member
+    MemberController->Member: Member member = new Member(name, personr, boats[])    
+    MemberController->MemberDAL: SaveMember(member)
+
+
+     note Right of Menu: UpdateMember
+     Menu->MemberController: MenuChoice(UserInput)
+     MemberController->MemberDAL: GetMembers() - returns all members
+
+    MemberController->Menu: ShowMembers(List<Member> members) - returns member
+
+    MemberController->MemberDAL: SaveMember(member) 
+    
+    note Right of Menu: DeleteMember
+    Menu->MemberController: MenuChoice(UserInput)
+    MemberController->MemberDAL: GetMembers() - returns      all members
+
+    MemberController->Menu: ShowMembers(List<Member> members) - returns member
+    MemberController->MemberDAL: DelteMember(member)
+
+    note Right of Menu: CompactList
+    Menu->MemberController: CompactLis()
+    MemberController->MemberDAL: GetMembers() - returns      all members
+    
+    note Right of Menu: VerboseList
+    Menu->MemberController: VerboseList()
+    MemberController->MemberDAL: GetMembers() - returns      all members
+} 
+
+
+
+
+
+MENU!
+
+1. Create
+2. Edit
+3. Delete
+4. Verbose List
+5. Compact List
+
+Createmember
+
+Namn: Anton Larsson
+
+Person nummer: 940125-0239
+
+
+Save Succsess!
+
+_____________________________________________
+
+Member List
+Press matching number.
+
+1. asdasd 2234
+2. asdas2 234234
+3. asdasd 234234
+asdasda 234234
+asdasd 234234 
+asdasd 34234 
+asdasd 234423
+asdasd 234234
+
+_________________________
