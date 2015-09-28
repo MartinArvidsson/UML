@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-title Authentication Sequence 
-=======
-title Authentication Sequence!
->>>>>>> anton
+title Authentication Sequence! 
 
 
 parallel {
