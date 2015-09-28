@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Workshop2.view;
 
 namespace Workshop2
 {
@@ -10,8 +11,8 @@ namespace Workshop2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ECH!");
-            Console.WriteLine("Hej");
+            Menuview Menu = new Menuview();
+            Menu.Runapplication();
         }
     }
 }

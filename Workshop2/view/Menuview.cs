@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Workshop2.view
 {
-    class polderplacer
+    class Menuview
     {
+        public void Runapplication()
+        {
+            Console.WriteLine("This is a testline of code");
+        }
     }
 }
