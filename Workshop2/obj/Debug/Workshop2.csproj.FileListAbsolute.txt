@@ -1,8 +1,16 @@
 C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe.config
 P:\1DV607- Objekt ananlys och design med UML\Labb_2\Workshop2\bin\Debug\Workshop2.exe.config
+<<<<<<< HEAD
+C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe
+C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.pdb
+C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache
+C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.exe
+C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.pdb
+=======
 C:\Users\al223jw\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe.config
 C:\Users\al223jw\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe
 C:\Users\al223jw\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.pdb
 C:\Users\al223jw\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache
 C:\Users\al223jw\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.exe
 C:\Users\al223jw\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.pdb
+>>>>>>> anton
