@@ -43,7 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\placeholder.cs" />
+    <Compile Include="model\Boat.cs" />
     <Compile Include="model\holderplacer.cs" />
+    <Compile Include="model\Member.cs" />
+    <Compile Include="model\MemberDAL.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -60,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Workshop2.vshost.exe" />
+    <Content Include="bin\Debug\database.txt" />
     <Content Include="obj\Debug\Workshop2.csproj.FileListAbsolute.txt" />
     <None Include="obj\Debug\Workshop2.csprojResolveAssemblyReference.cache" />
   </ItemGroup>
