@@ -1,1 +1,2 @@
 C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe.config
+P:\1DV607- Objekt ananlys och design med UML\Labb_2\Workshop2\bin\Debug\Workshop2.exe.config
