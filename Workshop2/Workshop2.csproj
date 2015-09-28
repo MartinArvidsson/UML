@@ -57,12 +57,10 @@
     <None Include="bin\Debug\Workshop2.vshost.exe.config" />
     <None Include="bin\Debug\Workshop2.vshost.exe.manifest" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-<<<<<<< HEAD
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Workshop2.vshost.exe" />
     <Content Include="obj\Debug\Workshop2.csproj.FileListAbsolute.txt" />
-=======
     <None Include="obj\Debug\Workshop2.csprojResolveAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
@@ -72,7 +70,6 @@
     <Content Include="obj\Debug\Workshop2.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Workshop2.exe" />
     <Content Include="obj\Debug\Workshop2.pdb" />
->>>>>>> anton
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
