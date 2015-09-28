@@ -8,6 +8,5 @@ namespace Workshop2.controller
 {
     class placeholder
     {
-        private int myVar;
     }
 }
