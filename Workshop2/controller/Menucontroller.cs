@@ -8,7 +8,7 @@ using Workshop2.model;
 
 namespace Workshop2.controller
 {
-    class placeholder
+    class Menucontroller
     {
         Menuview menuview = new Menuview();
         Member member = new Member();
