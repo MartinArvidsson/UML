@@ -8,7 +8,5 @@ namespace Workshop2.controller
 {
     class placeholder
     {
-        private string Actually = "The";
-        private string Crowbar = "Snaps in two";
     }
 }
