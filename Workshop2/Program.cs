@@ -10,7 +10,11 @@ namespace Workshop2
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             Console.WriteLine("ECH!");
+=======
+            Console.WriteLine("Hej");
+>>>>>>> anton
         }
     }
 }
