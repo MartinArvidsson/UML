@@ -17,3 +17,7 @@ D:\SKOLSAKER\UML\Workshop2\obj\Debug\Workshop2.pdb
 D:\SKOLSAKER\UML\Workshop2\bin\Debug\Workshop2.exe
 D:\SKOLSAKER\UML\Workshop2\bin\Debug\Workshop2.pdb
 D:\SKOLSAKER\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache
+C:\Users\lw222gz\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe.config
+C:\Users\lw222gz\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.exe
+C:\Users\lw222gz\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.pdb
+C:\Users\lw222gz\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache

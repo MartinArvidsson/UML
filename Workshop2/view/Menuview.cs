@@ -13,8 +13,13 @@ namespace Workshop2.view
         string firstname;
         string lastname;
         int persnr;
+        
+        string newfirstname;
+        string newlastname;
+        int newpersnr;
 
         string userinput;
+        string deleteinput;
         int Listchecker;
         string finalcheck;
         
@@ -37,6 +42,7 @@ namespace Workshop2.view
             Console.WriteLine("1.Register person");
             Console.WriteLine("2.view Person");
             Console.WriteLine("3.Edit person");
+            Console.WriteLine("4.Delete person");
             do
             {
                 try
@@ -60,8 +66,8 @@ namespace Workshop2.view
                             editperson();
                             break;
 
-                        default:
-                            Console.WriteLine("Du valde inget giltigt");
+                        case 4:
+                            deleteperson();
                             break;
                     }
                 }
@@ -155,41 +161,94 @@ namespace Workshop2.view
 
 
 
-        public void editperson()
+        public Member editperson()
         {
             do
             {
                 Console.WriteLine("Du valde edit person!\n");
-                Console.WriteLine("Välj en person från listan :\n");
+                Console.WriteLine("Välj en person från listan");
                 //TODO: lista med personer ska hämtas från controllern..
 
-                List<member> Persons = menucontroller.getPersons();
+                List<Member> Persons = menucontroller.getPersons();
                 int i;
                 foreach(var member in Persons)
                 {
                     i++;
-                    Console.WriteLine("{4}: Firstname: {0}, Lastname: {1}, Persnr: {2}, ID: {3}", person.Firstname,person.Lastname,person.Persnr,person.id,i);
+                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i,person.Firstname,person.Lastname,person.persnr);
+                    //TODO båt
                     
                 }
 
                 userinput = Console.ReadLine();
 
-
-                if (userinput == "1") //Temp
+                try
                 {
-                    Console.WriteLine("vill du redigera person: {0} ,{1} ,{2} ,{3} ?",person.Firstname,person.Lastname,person.Persnr,person.id);
+                    Persons[userinput - 1];
+                    Console.WriteLine("nytt förnamn?");
+                    newfirstname = Console.ReadLine();
+                    Console.WriteLine("Nytt efternamn");
+                    newlastname = Console.ReadLine();
+                    Console.WriteLine("Nytt personnummer?");
+                    newpersnr= int.Parse(Console.ReadLine());
+
+                    //ANROPA METOD I CONTROLLER
+                }
+                catch
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+            }
+            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+        }
+
+        public string getnewfirstname
+        {
+            get { return newfirstname; }
+        }
+
+        public string getnewlastname
+        {
+            get { return newlastname; }
+        }
+
+        public int getnewpersnr
+        {
+            get { return newpersnr; }
+        }
+
+
+
+
+
+        public Member deleteperson()
+        {
+            do
+            {
+                Console.WriteLine("Du valde delete person!\n");
+                Console.WriteLine("Välj en person från listan");
+                //TODO: lista med personer ska hämtas från controllern..
+
+                List<Member> Persons = menucontroller.getPersons();
+                int i;
+                foreach(var member in Persons)
+                {
+                    i++;
+                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i,person.Firstname,person.Lastname,person.persnr);
+                    //TODO båt
                     
-                    Console.WriteLine("ja/nej");
-                    finalcheck = Console.ReadLine();
-                    if (finalcheck == "ja")
-                    {
-                        //Redigera person
-                        Console.WriteLine("Temp");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Registeringen avbröts eller så angavs ett ickegiltigt kommando, återgår till update person.");
-                    }
+                }
+
+                deleteinput = Console.ReadLine();
+
+                try
+                {
+                    Persons[deleteinput - 1];
+                    Console.WriteLine("Personen tas bort! tack");
+                    return Persons[deleteinput - 1];
+                }
+                catch
+                {
+                    throw new ArgumentOutOfRangeException();
                 }
             }
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);
@@ -199,39 +258,35 @@ namespace Workshop2.view
 
 
 
-
-
-
-
-
-
         public void listpersoncompact()
         {
             Console.WriteLine("Du valde compact list!");
-            //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
+          /*  //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
             List<member> Persons = menucontroller.getCompactlist();
             int i;
             foreach (var member in Persons)
             {
                 i++;
-                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}, Boats: {4}",i,person.Firstname, person.Lastname, person.id, person.Boats);
-            
-            }
+                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}, Boats: {4}", i, person.Firstname, person.Lastname, person.id, person.Boats);
+
+            } */ //TODO
+        }
 
         
         
         public void listpersonverbose()
         {
            Console.WriteLine("Du valde verbose list!");
-           //Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
+          /* //Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
            List<member> Persons = menucontroller.getVerboselist();
            int i;
            foreach (var member in Persons)
            {
                i++;
                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}, Boats: {4}", i, person.Firstname, person.Lastname, person.id, person.Boats);
-           }
+               //TODO
+           }*/
     
         }
-        }
     }
+}

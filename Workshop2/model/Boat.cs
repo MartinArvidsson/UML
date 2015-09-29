@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Workshop2.model
 {
-    class holderplacer
+    class Boat
     {
+        //TODO: Plan this class later on.
     }
 }
