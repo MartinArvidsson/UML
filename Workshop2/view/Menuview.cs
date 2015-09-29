@@ -14,6 +14,7 @@ namespace Workshop2.view
         string lastname = "";
         int persnr;
         string userinput;
+        int Listchecker;
         string finalcheck;
         public void Runapplication()
         {
@@ -28,16 +29,14 @@ namespace Workshop2.view
             Console.WriteLine("===================================\n\n");
             Console.ResetColor();
             Console.WriteLine("1.Register person");
-            Console.WriteLine("2.Update Person");
+            Console.WriteLine("2.view Person");
             Console.WriteLine("3.Edit person");
-            Console.WriteLine("4.Verbose List");
-            Console.WriteLine("5.Compact List");
             do
             {
                 try
                 {
                     choice = int.Parse(Console.ReadLine());
-                    if (choice < 1 || choice > 5)
+                    if (choice < 1 || choice > 3)
                     {
                         throw new ArgumentOutOfRangeException();
                     }
@@ -48,19 +47,11 @@ namespace Workshop2.view
                             break;
 
                         case 2:
-                            updateperson();
+                            Viewperson();
                             break;
 
                         case 3:
                             editperson();
-                            break;
-
-                        case 4:
-                            listpersonverbose();
-                            break;
-
-                        case 5:
-                            listpersoncompact();
                             break;
 
                         default:
@@ -88,7 +79,7 @@ namespace Workshop2.view
             Console.WriteLine("personnummer:?");
             persnr = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("du skrev: " + firstname + "," + lastname + "," + persnr + " personen kommer att registreras");
+            Console.WriteLine("du skrev: {0}, {1}, {2} personen kommer att registreras",firstname ,lastname ,persnr);
 
         }
 
@@ -108,34 +99,59 @@ namespace Workshop2.view
             get { return persnr; }
         }
 
-        public void updateperson()
+        public void Viewperson()
         {
             do
             {
-                Console.WriteLine("Du valde update person!\n");
-                Console.WriteLine("Välj en person från listan genom att skriva ID:t :\n");
+           Console.WriteLine("Du valde view person!");
+            //fråga om verbose eller compact list, efter det visas alla medlemmar enligt den valda listan
+            Console.WriteLine("vilken typ av lista?");
+            Console.WriteLine("1: Compact");
+            Console.WriteLine("2: Verbose");
+
+            Listchecker = int.Parse(Console.ReadLine());
+            if (Listchecker < 1 || Listchecker > 2)
+            {
+                if(Listchecker == 1)
+                {
+                    listpersoncompact();
+                }
+                else
+                {
+                    listpersonverbose();
+                }
+            }
+            else
+                throw new ArgumentOutOfRangeException();
+            }
+            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+        }
+        
+
+        public void editperson()
+        {
+            do
+            {
+                Console.WriteLine("Du valde edit person!\n");
+                Console.WriteLine("Välj en person från listan :\n");
                 //TODO: lista med personer ska hämtas från controllern..
 
-                List<string> Persons = menucontroller.getPersons();
-
-                foreach(var person in Persons)
+                List<member> Persons = menucontroller.getPersons();
+                int i;
+                foreach(var member in Persons)
                 {
-                    Console.Writeline("Firstname: {0}, Lastname: {1}, Persnr: {2}, ID: {3}", person.Firstname,person.Lastname,person.Persnr,person.id);
+                    i++;
+                    Console.WriteLine("{4}: Firstname: {0}, Lastname: {1}, Persnr: {2}, ID: {3}", person.Firstname,person.Lastname,person.Persnr,person.id,i);
                     
                 }
 
                 userinput = Console.ReadLine();
 
-                //Kolla om userinput machar ett id till en person
 
-                if()
+                if (userinput)
                 {
-                    //Görs här
-                }
-
-                if ()
-                {
-                    Console.WriteLine("vill du redigera person:" + person.Firstname + "," + person.Lastname + "," + person.Persnr + "," + person.id +"?");
+                    Console.WriteLine("vill du redigera person: {0} ,{1} ,{2} ,{3} ?",person.Firstname,person.Lastname,person.Persnr,person.id);
+                    
                     Console.WriteLine("ja/nej");
                     finalcheck = Console.ReadLine();
                     if (finalcheck == "ja")
@@ -145,27 +161,23 @@ namespace Workshop2.view
                     }
                     else
                     {
-                        Console.WriteLine("Registeringen avbröts eller så angavs ett ickegjiltigt kommando, återgår till update person.");
+                        Console.WriteLine("Registeringen avbröts eller så angavs ett ickegiltigt kommando, återgår till update person.");
                     }
                 }
             }
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
-        
-
-        public void editperson()
-        {
-            Console.WriteLine("Du valde redigera person!");
-        }
 
         public void listpersonverbose()
         {
            Console.WriteLine("Du valde Verbose list!");
+            //Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
         }
 
         public void listpersoncompact()
         {
             Console.WriteLine("Du valde compact list!");
+            //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
         }
     }
 }
