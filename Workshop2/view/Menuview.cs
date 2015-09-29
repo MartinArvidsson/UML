@@ -10,17 +10,23 @@ namespace Workshop2.view
     class Menuview
     {
         int choice;
-        string firstname = "";
-        string lastname = "";
+        string firstname;
+        string lastname;
         int persnr;
+
         string userinput;
         int Listchecker;
         string finalcheck;
+        
         public void Runapplication()
         {
             placeholder menucontroller = new placeholder();
             StartMenu();
         }
+
+
+
+
         public void StartMenu()
         {
             Console.BackgroundColor = ConsoleColor.DarkBlue;
@@ -69,6 +75,14 @@ namespace Workshop2.view
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
 
+
+
+
+
+
+
+
+
         public void registerperson()
         {
             Console.WriteLine("Du valde ny person!\n");
@@ -99,6 +113,10 @@ namespace Workshop2.view
             get { return persnr; }
         }
 
+
+
+
+
         public void Viewperson()
         {
             do
@@ -128,6 +146,15 @@ namespace Workshop2.view
         }
         
 
+
+
+
+
+
+
+
+
+
         public void editperson()
         {
             do
@@ -148,7 +175,7 @@ namespace Workshop2.view
                 userinput = Console.ReadLine();
 
 
-                if (userinput)
+                if (userinput == "1") //Temp
                 {
                     Console.WriteLine("vill du redigera person: {0} ,{1} ,{2} ,{3} ?",person.Firstname,person.Lastname,person.Persnr,person.id);
                     
@@ -168,16 +195,43 @@ namespace Workshop2.view
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
 
-        public void listpersonverbose()
-        {
-           Console.WriteLine("Du valde Verbose list!");
-            //Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
-        }
+
+
+
+
+
+
+
+
+
 
         public void listpersoncompact()
         {
             Console.WriteLine("Du valde compact list!");
             //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
+            List<member> Persons = menucontroller.getCompactlist();
+            int i;
+            foreach (var member in Persons)
+            {
+                i++;
+                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}, Boats: {4}",i,person.Firstname, person.Lastname, person.id, person.Boats);
+            
+            }
+
+        
+        
+        public void listpersonverbose()
+        {
+           Console.WriteLine("Du valde verbose list!");
+           //Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
+           List<member> Persons = menucontroller.getVerboselist();
+           int i;
+           foreach (var member in Persons)
+           {
+               i++;
+               Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}, Boats: {4}", i, person.Firstname, person.Lastname, person.id, person.Boats);
+           }
+    
+        }
         }
     }
-}
