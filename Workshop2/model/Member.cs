@@ -22,18 +22,42 @@ namespace Workshop2.model
         //properties
         public string FirstName
         {
-            get { return _FirstName; }          
+            get { return _FirstName; }
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentNullException("First name requires a value.");
+                } 
+                _FirstName = value;
+            }
         }
 
         public string LastName
         {
             get { return _LastName; }
+            set {
+                    if (String.IsNullOrWhiteSpace(value))
+                    {
+                        throw new ArgumentNullException("Last name requires a value.");
+                    }
+                    _LastName = value; 
+                } 
         }
 
         public string PersonalNumber
         {
             get { return _PersonalNr; }
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentNullException("Personal number requires a value.");
+                } 
+                _PersonalNr = value;
+            } //TODO: check if value is a legit personal number
         }
+        //is read only
         public string MemberID
         {
             get { return _MemberID; }
@@ -41,6 +65,7 @@ namespace Workshop2.model
         public List<Boat> Boats
         {
             get { return _MemberBoats; }
+            set { _MemberBoats = value; }
         }
 
        
@@ -49,6 +74,8 @@ namespace Workshop2.model
         {
             //This constructor calls the constructor with 5 parameters.
         }
+
+
         public Member(string _firstName, string _lastName, string _personalNr, string _memberID = null, List<Boat> _memberBoats = null)
         {
             _FirstName = _firstName;
@@ -56,6 +83,7 @@ namespace Workshop2.model
             _PersonalNr = _personalNr;
             if(_memberID == null)
             {
+                //saving as string beacuse it makes it easier to handle when getting it form the .txt file.
                 _MemberID = Guid.NewGuid().ToString();
             }
             else
@@ -63,10 +91,6 @@ namespace Workshop2.model
                 _MemberID = _memberID;
             }
             _MemberBoats = _memberBoats;
-            
-
-            //TODO: Set all values and generate random ID
-            //also test if default value works
         }
 
         

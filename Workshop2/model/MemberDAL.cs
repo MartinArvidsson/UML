@@ -30,6 +30,7 @@ namespace Workshop2.model
 
         //list of all members
         private List<Member> Members;
+
         //Enum of current status for the reader.
         private enum MemberReadStatus { Indefinite, MemberFirstName, MemberLastName, MemberID, MemberPersonalNumber, Boats };
 
@@ -40,6 +41,7 @@ namespace Workshop2.model
             
         }
 
+        //Reads all members in the database.txt file and returns a List of Member objects.
         public List<Member> ReadMembers()
         {
             Members = new List<Member>(100);
@@ -121,16 +123,56 @@ namespace Workshop2.model
             return Members;
         }
 
+
+        //adds @member parameter to the .txt file
         public void AddMember(Member member)
         {
             List<Member> CurrMembers = ReadMembers();
             CurrMembers.Add(member);
-            using (StreamWriter writer = new StreamWriter(_path))
-            {
-                //File.AppendText = Lägger till ny text till .txt filen.
-                //new StreamWriter = skriver om HELA .txt filen.
+            Save(CurrMembers);
+        }
 
-                foreach (Member m in CurrMembers)
+
+        //Edits a current members info.
+        public void EditMember(Member member)
+        {
+            List<Member> CurrMembers = ReadMembers();
+            for (int i = 0; i < CurrMembers.Count; i++)
+            { 
+                if (CurrMembers[i].MemberID == member.MemberID){
+                    CurrMembers[i] = member; //object with old data
+                    Save(CurrMembers); //object with new data
+                    break;
+                }
+            }
+        }
+
+        //removes a registerd member
+        public void RemoveMember(Member member)
+        {
+            List<Member> CurrMembers = ReadMembers();
+
+            foreach (Member m in CurrMembers)
+            {
+                //it is EXREMLY unlikely that the ID's match, BUT if they do it's damn near impossible 
+                //that those persons have the same name
+                if (m.MemberID == member.MemberID)
+                {
+                    CurrMembers.Remove(m);
+                    Save(CurrMembers);
+                    break;
+                }
+            }
+        }
+
+        //Saves the databse.txt file based on parameter @_members
+        public void Save(List<Member> _members)
+        {
+            //File.AppendText = Lägger till ny text till .txt filen.
+            //new StreamWriter = skriver om HELA .txt filen.
+            using (StreamWriter writer = new StreamWriter(_path))
+            {               
+                foreach (Member m in _members)
                 {
                     writer.WriteLine(sectionMemberName);
                     writer.WriteLine(m.FirstName);
@@ -148,10 +190,7 @@ namespace Workshop2.model
                     //TODO: Write in boats here!
                 }
                 writer.WriteLine(sectionEnd);
-              
-
             }
         }
-
     }
 }
