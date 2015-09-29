@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\placeholder.cs" />
-    <Compile Include="model\holderplacer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="view\Menuview.cs" />
@@ -69,6 +68,7 @@
     <Content Include="obj\Debug\Workshop2.pdb" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="model\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
