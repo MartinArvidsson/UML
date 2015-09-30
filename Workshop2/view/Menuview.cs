@@ -11,18 +11,18 @@ namespace Workshop2.view
     class Menuview
     {
         int choice;
-        string firstname = "";
-        string lastname = "";
-        string persnr = "";
-        
-        string newfirstname;
-        string newlastname;
-        int newpersnr;
+        private string firstname = "";
+        private string lastname = "";
+        private string persnr = "";
 
-        string userinput;
-        string deleteinput;
-        int Listchecker;
-        string finalcheck;
+        private string newfirstname = "";
+        private string newlastname = "";
+        private string newpersnr = "";
+
+        private string userinput;
+        private string deleteinput;
+        private int Listchecker;
+        private string finalcheck;
         
         public void Runapplication()
         {
@@ -34,14 +34,14 @@ namespace Workshop2.view
         public void StartMenu()
         {
             Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine("===================================");
-            Console.WriteLine("===            MENU             ===");
-            Console.WriteLine("===================================\n\n");
+            Console.WriteLine("===============================");
+            Console.WriteLine("=            MENU             =");
+            Console.WriteLine("===============================\n\n");
             Console.ResetColor();
             Console.WriteLine("1.Register person");
-            Console.WriteLine("2.view Person");
-            Console.WriteLine("3.Edit person");
-            Console.WriteLine("4.Delete person");
+            Console.WriteLine("2.Edit person");
+            Console.WriteLine("3.Delete person");
+            Console.WriteLine("4.view Person");
             do
             {
                 try
@@ -58,15 +58,15 @@ namespace Workshop2.view
                             break;
 
                         case 2:
-                            Viewperson();
-                            break;
-
-                        case 3:
                             editperson();
                             break;
 
-                        case 4:
+                        case 3:
                             deleteperson();
+                            break;
+
+                        case 4:
+                            Viewperson();
                             break;
                     }
                 }
@@ -93,7 +93,11 @@ namespace Workshop2.view
             persnr = Console.ReadLine();
 
             Console.WriteLine("du skrev: {0}, {1}, {2} personen kommer att registreras",firstname ,lastname ,persnr);
-            Member member new Member(firstname,lastname,persnr);
+            
+            
+            //Member member new Member(firstname,lastname,persnr);
+
+            //TODO skapa memberobjekt som fylls på och retuneras till controllern som sedan tar och skickar till member för att skapa en ny instans av en medlem.
 
         }
 
@@ -126,8 +130,8 @@ namespace Workshop2.view
                 foreach(var member in Persons)
                 {
                     i++;
-                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i,person.Firstname,person.Lastname,person.persnr);
-                    //TODO båt
+                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i, member.Firstname, member.Lastname, member.persnr);
+                    //TODO lägg till ett båtelement
                     
                 }
 
@@ -141,9 +145,10 @@ namespace Workshop2.view
                     Console.WriteLine("Nytt efternamn");
                     newlastname = Console.ReadLine();
                     Console.WriteLine("Nytt personnummer?");
-                    newpersnr= int.Parse(Console.ReadLine());
+                    newpersnr= Console.ReadLine();
 
-                    //ANROPA METOD I CONTROLLER
+                    //Member updatemember new Member(newfirstname,newlastname,newpersnr);
+                    //Skapa ett memberobjekt med den nya informationen, skicka till controller som skickar till member.
                 }
                 catch
                 {
@@ -163,7 +168,7 @@ namespace Workshop2.view
             get { return newlastname; }
         }
 
-        public int getnewpersnr
+        public string getnewpersnr
         {
             get { return newpersnr; }
         }
@@ -182,8 +187,8 @@ namespace Workshop2.view
                 foreach(var member in Persons)
                 {
                     i++;
-                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i,person.Firstname,person.Lastname,person.persnr);
-                    //TODO båt
+                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i, member.Firstname, member.Lastname, member.persnr);
+                    //TODO lägg till båtelement, båtarna ska synas när man  ska ta bort.
                     
                 }
 
@@ -194,6 +199,8 @@ namespace Workshop2.view
                     Persons[deleteinput - 1];
                     Console.WriteLine("Personen tas bort! tack");
                     return Persons[deleteinput - 1];
+
+                    //Retunera platsen i memberarrayen till en metod i controllern, som skickar till member där man tar bort personen.
                 }
                 catch
                 {
@@ -244,7 +251,7 @@ namespace Workshop2.view
                 i++;
                 Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}", i, person.Firstname, person.Lastname, person.id,);
 
-            }  //TODO
+            }  //TODO visa upp antalet båtar.
         }
 
             
@@ -259,7 +266,7 @@ namespace Workshop2.view
            {
                i++;
                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}", i, person.Firstname, person.Lastname, person.id);
-               //TODO
+               //TODO båtar och båtinformation
            }
     
         }
