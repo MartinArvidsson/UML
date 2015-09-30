@@ -78,6 +78,11 @@ namespace Workshop2.model
 
         public Member(string _firstName, string _lastName, string _personalNr, string _memberID = null, List<Boat> _memberBoats = null)
         {
+            //validates values sent, they must NOT be null or white space.
+            if (String.IsNullOrWhiteSpace(_firstName) || String.IsNullOrWhiteSpace(_lastName) || String.IsNullOrWhiteSpace(_personalNr))
+            {
+                throw new ArgumentNullException();
+            }
             _FirstName = _firstName;
             _LastName = _lastName;
             _PersonalNr = _personalNr;

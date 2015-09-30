@@ -15,69 +15,51 @@ namespace Workshop2.view
         private string lastname = "";
         private string persnr = "";
 
-        private string newfirstname = "";
-        private string newlastname = "";
-        private string newpersnr = "";
+        private int i;
+        private int j;
+        private int k;
+        private int l;
 
-        private string userinput;
-        private string deleteinput;
+        private int userinput;
+        private int deleteinput;
         private int Listchecker;
-        private string finalcheck;
-        
-        public void Runapplication()
-        {
-            placeholder menucontroller = new placeholder();
-            StartMenu();
-        }
+
+        private int menuChoice;
+
+        private string updateMess;
 
 
-        public void StartMenu()
+        public int StartMenu()
         {
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("===============================");
             Console.WriteLine("=            MENU             =");
             Console.WriteLine("===============================\n\n");
             Console.ResetColor();
+            Console.WriteLine("0.Exit application.");
             Console.WriteLine("1.Register person");
             Console.WriteLine("2.Edit person");
             Console.WriteLine("3.Delete person");
             Console.WriteLine("4.view Person");
-            do
+            Console.WriteLine(updateMess);
+            updateMess = "";
+
+            try
             {
-                try
+                menuChoice = int.Parse(Console.ReadLine());
+                if (menuChoice < 0 || menuChoice > 4)
                 {
-                    choice = int.Parse(Console.ReadLine());
-                    if (choice < 1 || choice > 3)
-                    {
-                        throw new ArgumentOutOfRangeException();
-                    }
-                    switch (choice)
-                    {
-                        case 1:
-                            registerperson();
-                            break;
-
-                        case 2:
-                            editperson();
-                            break;
-
-                        case 3:
-                            deleteperson();
-                            break;
-
-                        case 4:
-                            Viewperson();
-                            break;
-                    }
-                }
-                catch
-                {
-                    Console.BackgroundColor = ConsoleColor.DarkRed;
-                    Console.WriteLine("\n angav inte ett giltigt tal. Ange ett nummer från [1 till 5] tack!\n");
-                    Console.ResetColor();
+                    throw new ArgumentOutOfRangeException();
                 }
             }
-            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+            catch
+            {
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("\nDu angav inte ett giltigt tal. Ange ett nummer från [1 till 5] tack!\n");
+                Console.ResetColor();
+            }
+
+            return menuChoice;           
         }
 
 
@@ -92,8 +74,9 @@ namespace Workshop2.view
             Console.WriteLine("personnummer:?");
             persnr = Console.ReadLine();
 
-            Console.WriteLine("du skrev: {0}, {1}, {2} personen kommer att registreras",firstname ,lastname ,persnr);
+            updateMess = String.Format("du skrev: {0}, {1}, {2} personen kommer att registreras",firstname ,lastname ,persnr);
             
+
             
             //Member member new Member(firstname,lastname,persnr);
 
@@ -117,103 +100,91 @@ namespace Workshop2.view
             get { return persnr; }
         }
 
-        public Member editperson()
+        public Member editperson(List<Member> Persons)
         {
-            do
-            {
-                Console.WriteLine("Du valde edit person!\n");
-                Console.WriteLine("Välj en person från listan");
-                //TODO: lista med personer ska hämtas från controllern..
+            Member membertoedit;
+            Console.WriteLine("Du valde edit person!\n");
+            Console.WriteLine("Välj en person från listan");
+            //TODO: lista med personer ska hämtas från controllern..
 
-                List<Member> Persons = menucontroller.getPersons();
-                int i;
-                foreach(var member in Persons)
-                {
-                    i++;
-                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i, member.Firstname, member.Lastname, member.persnr);
-                    //TODO lägg till ett båtelement
+            //List<Member> Persons = menucontroller.getPersons();
+                
+            foreach(var member in Persons)
+            {
+                i++;
+                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i, member.FirstName, member.LastName, member.PersonalNumber);
+                //TODO lägg till ett båtelement
                     
-                }
-
-                userinput = Console.ReadLine();
-
-                try
-                {
-                    Persons[userinput - 1];
-                    Console.WriteLine("nytt förnamn?");
-                    newfirstname = Console.ReadLine();
-                    Console.WriteLine("Nytt efternamn");
-                    newlastname = Console.ReadLine();
-                    Console.WriteLine("Nytt personnummer?");
-                    newpersnr= Console.ReadLine();
-
-                    //Member updatemember new Member(newfirstname,newlastname,newpersnr);
-                    //Skapa ett memberobjekt med den nya informationen, skicka till controller som skickar till member.
-                }
-                catch
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
             }
-            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
-        }
+            i = 0;
 
-        public string getnewfirstname
-        {
-            get { return newfirstname; }
-        }
-
-        public string getnewlastname
-        {
-            get { return newlastname; }
-        }
-
-        public string getnewpersnr
-        {
-            get { return newpersnr; }
-        }
-
-
-        public Member deleteperson()
-        {
-            do
+          
+            userinput = int.Parse(Console.ReadLine());
+            if (userinput < 0 || userinput > Persons.Count)
             {
-                Console.WriteLine("Du valde delete person!\n");
-                Console.WriteLine("Välj en person från listan");
-                //TODO: lista med personer ska hämtas från controllern..
+                throw new ArgumentOutOfRangeException();
+            }
+            membertoedit = Persons[userinput - 1];
+            Console.WriteLine("Current first name: {0}", membertoedit.FirstName);
+            Console.WriteLine("Current last name: {0}", membertoedit.LastName);
+            Console.WriteLine("Current personal number: {0}", membertoedit.PersonalNumber);
 
-                List<Member> Persons = menucontroller.getPersons();
-                int i;
-                foreach(var member in Persons)
-                {
-                    i++;
-                    Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", i, member.Firstname, member.Lastname, member.persnr);
-                    //TODO lägg till båtelement, båtarna ska synas när man  ska ta bort.
+            Console.WriteLine("nytt förnamn?");
+            firstname = Console.ReadLine();
+
+            Console.WriteLine("Nytt efternamn");
+            lastname = Console.ReadLine();
+
+            Console.WriteLine("Nytt personnummer?");
+            persnr= Console.ReadLine();
+
+            //Member updatemember new Member(newfirstname,newlastname,newpersnr);
+            //Skapa ett memberobjekt med den nya informationen, skicka till controller som skickar till member.
+                
+
+            updateMess = String.Format("Du har precis uppdaterat medlem {0} {1} med personNr: {2} till {3} {4} med personNr: {5}", membertoedit.FirstName, membertoedit.LastName, membertoedit.PersonalNumber,
+                firstname, lastname, persnr);
+
+            return membertoedit;
+        }
+       
+
+
+        public Member deleteperson(List<Member> Persons)
+        {
+            Member Membertodelete;
+            Console.WriteLine("Du valde delete person!\n");
+            Console.WriteLine("Välj en person från listan");
+            //TODO: lista med personer ska hämtas från controllern..
+
+            //List<Member> Persons = menucontroller.getPersons();
+            foreach(var member in Persons)
+            {
+                j++;
+                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", j, member.FirstName, member.LastName, member.PersonalNumber);
+                //TODO lägg till båtelement, båtarna ska synas när man  ska ta bort.
                     
-                }
-
-                deleteinput = Console.ReadLine();
-
-                try
-                {
-                    Persons[deleteinput - 1];
-                    Console.WriteLine("Personen tas bort! tack");
-                    return Persons[deleteinput - 1];
-
-                    //Retunera platsen i memberarrayen till en metod i controllern, som skickar till member där man tar bort personen.
-                }
-                catch
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
             }
-            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+            j = 0;
+                
+            
+            deleteinput = int.Parse(Console.ReadLine());
+            if (deleteinput < 0 || deleteinput > Persons.Count)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            Membertodelete = Persons[deleteinput - 1];
+            updateMess = String.Format("Personen tas bort!");
+                    
+
+            //Retunera platsen i memberarrayen till en metod i controllern, som skickar till member där man tar bort personen.
+                
+            return Membertodelete;
         }
 
-        public void Viewperson()
+        public void Viewperson(List<Member> Persons)
         {
-            do
-            {
+
                 Console.WriteLine("Du valde view person!");
                 //fråga om verbose eller compact list, efter det visas alla medlemmar enligt den valda listan
                 Console.WriteLine("vilken typ av lista?");
@@ -221,54 +192,57 @@ namespace Workshop2.view
                 Console.WriteLine("2: Verbose");
 
                 Listchecker = int.Parse(Console.ReadLine());
-                if (Listchecker < 1 || Listchecker > 2)
+
+                if (Listchecker == 1)
                 {
-                    if (Listchecker == 1)
-                    {
-                        listpersoncompact();
-                    }
-                    else
-                    {
-                        listpersonverbose();
-                    }
+                    listpersoncompact(Persons);
                 }
+                else if(Listchecker == 2)
+                {
+                    listpersonverbose(Persons);
+                }              
                 else
                     throw new ArgumentOutOfRangeException();
-            }
-            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
 
 
-        public void listpersoncompact()
+        public void listpersoncompact(List<Member> Persons)
         {
             Console.WriteLine("Du valde compact list!");
-            //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
-            //“Compact List”; name, member id and number of boats
-            List<Member> Persons = menucontroller.getCompactlist();
-            int i;
+
             foreach (var member in Persons)
             {
-                i++;
-                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}", i, person.Firstname, person.Lastname, person.id,);
+                k++;
+                Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", k, member.FirstName, member.LastName, member.PersonalNumber);
+                //TODO lägg till båtelement, båtarna ska synas när man  ska ta bort.
 
-            }  //TODO visa upp antalet båtar.
+            }
+            k = 0;
+            //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
+            //“Compact List”; name, member id and number of boats
         }
 
-            
-        public void listpersonverbose()
+
+        public void listpersonverbose(List<Member> Persons)
         {
            Console.WriteLine("Du valde verbose list!");
-          //Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
-           //“Verbose List”; name, personal number, member id and boats with boat information
-           List<Member> Persons = menucontroller.getVerboselist();
-           int i;
+
            foreach (var member in Persons)
            {
-               i++;
-               Console.WriteLine("{0}: Firstname: {1}, Lastname: {2}, ID: {3}", i, person.Firstname, person.Lastname, person.id);
-               //TODO båtar och båtinformation
+               l++;
+               Console.WriteLine("{0}: Firstname: {1}, Lastname: {2} PersonID: {3}", l, member.FirstName, member.LastName, member.PersonalNumber);
+               //TODO lägg till båtelement, samt båtinformation
+
            }
-    
+           l = 0;
+          ////Visa upp alla medlemar med name,personalnumber,memberID,Boats boatsinformation
+          // //“Verbose List”; name, personal number, member id and boats with boat information    
+        }
+
+
+        public void ErrorMess(string message)
+        {
+            updateMess = message;
         }
     }
 }

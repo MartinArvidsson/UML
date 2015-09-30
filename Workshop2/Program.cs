@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Workshop2.view;
+using Workshop2.controller;
 
 namespace Workshop2
 {
@@ -11,8 +11,8 @@ namespace Workshop2
     {
         static void Main(string[] args)
         {
-            Menuview Menu = new Menuview();
-            Menu.Runapplication();
+            Menucontroller controller = new Menucontroller();
+            controller.Runapplication();
         }
     }
 }

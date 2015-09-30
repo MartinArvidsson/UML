@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controller\placeholder.cs" />
+    <Compile Include="controller\Menucontroller.cs" />
     <Compile Include="model\Boat.cs" />
     <Compile Include="model\Member.cs" />
     <Compile Include="model\MemberDAL.cs" />
@@ -58,6 +58,7 @@
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\database.txt" />
     <Content Include="bin\Debug\Workshop2.vshost.exe" />
     <Content Include="obj\Debug\Workshop2.csproj.FileListAbsolute.txt" />
     <None Include="obj\Debug\Workshop2.csprojResolveAssemblyReference.cache" />
