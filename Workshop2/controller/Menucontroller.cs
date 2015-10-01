@@ -130,30 +130,5 @@ namespace Workshop2.controller
 
             return MemberBoats;
         }
-
-    //    public Member Edit(Member m)
-    //    {
-    //        int choice = view.EditMemberInfo(m);
-
-    //        if (choice == 1)
-    //        {
-    //            view.editPersonalInfo(m);
-
-    //            m.FirstName = view.getfirstname;
-    //            m.LastName = view.getlastname;
-    //            m.PersonalNumber = view.getpersnr;
-    //        }
-    //        else if (choice == 2)
-    //        {
-    //            view.editBoatInfo(m);
-
-    //            m.Boats[choice].Lenght = view.getboatlength;
-    //            m.Boats[choice].BoatType = view.getboattype;
-    //        }
-    //        else
-    //            throw new ArgumentOutOfRangeException();
-
-    //        return m;
-    //    }
     }
 }
