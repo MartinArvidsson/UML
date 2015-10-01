@@ -72,11 +72,17 @@ namespace Workshop2.model
         public Member(string _firstName, string _lastName, string _personalNr)
             : this(_firstName, _lastName, _personalNr, null, null)
         {
+            //This constructor calls the constructor with 4 parameters.
+        }
+
+        public Member(string _firstName, string _lastName, string _personalNr, List<Boat> _memberBoats)
+            : this(_firstName, _lastName, _personalNr, _memberBoats, null)
+        {
             //This constructor calls the constructor with 5 parameters.
         }
 
 
-        public Member(string _firstName, string _lastName, string _personalNr, string _memberID = null, List<Boat> _memberBoats = null)
+        public Member(string _firstName, string _lastName, string _personalNr, List<Boat> _memberBoats = null, string _memberID = null)
         {
             //validates values sent, they must NOT be null or white space.
             if (String.IsNullOrWhiteSpace(_firstName) || String.IsNullOrWhiteSpace(_lastName) || String.IsNullOrWhiteSpace(_personalNr))
@@ -94,6 +100,10 @@ namespace Workshop2.model
             else
             {
                 _MemberID = _memberID;
+            }
+            if (_memberBoats == null)
+            {
+                _memberBoats = new List<Boat>();
             }
             _MemberBoats = _memberBoats;
         }

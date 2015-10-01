@@ -14,6 +14,7 @@ namespace Workshop2.controller
         MemberDAL memberDAL = new MemberDAL();
 
         private int choice;
+        private int boattoedit;
 
         public void Runapplication()
         {
@@ -35,11 +36,10 @@ namespace Workshop2.controller
                     break;
 
                 case 1:
-                    view.registerperson();
-                    
                     try
                     {
-                        Member newMember = new Member(view.getfirstname, view.getlastname, view.getpersnr);
+                        List<Boat> boats = CreateMemberBoats(view.registerperson());
+                        Member newMember = new Member(view.getfirstname, view.getlastname, view.getpersnr, boats);
                         memberDAL.AddMember(newMember);
                     }
                     catch
@@ -52,18 +52,34 @@ namespace Workshop2.controller
                 case 2:
                     try
                     {
-                        Member membertoedit = view.editperson(memberDAL.ReadMembers());
-
-                        membertoedit.FirstName = view.getfirstname;
-                        membertoedit.LastName = view.getlastname;
-                        membertoedit.PersonalNumber = view.getpersnr;
-
-                        memberDAL.EditMember(membertoedit);
+                        //Member UpdatedMember = Edit(view.editperson(memberDAL.ReadMembers()));
+                        //memberDAL.EditMember(UpdatedMember);
                         Console.Clear();
+                        Member m = view.editperson(memberDAL.ReadMembers());
+                        switch (view.EditMenu())
+                        {
+                            case 1:
+                                view.editPersonalInfo(m);
+                                m.FirstName = view.getfirstname;
+                                m.LastName = view.getlastname;
+                                m.PersonalNumber = view.getpersnr;
+                                break;
+
+                            case 2:
+                                view.editBoatInfo(m);
+
+                                boattoedit = view.returncurrentboat;
+                                m.Boats[boattoedit].Lenght = view.getboatlength;
+                                m.Boats[boattoedit].BoatType = view.getboattype;
+
+                                break;
+                        }
+                        memberDAL.EditMember(m);
+
                     }
                     catch
                     {
-                        view.ErrorMess("Ditt val av person som skulle tas bort existerade inte.");
+                        //view.ErrorMess("Kunde inte redigera båt / Person.");
                     }
                     
                     break;
@@ -90,5 +106,54 @@ namespace Workshop2.controller
 
             Runapplication();
         }
+
+
+        private List<Boat> CreateMemberBoats(int amountOfBoats)
+        {
+            List<Boat> MemberBoats = new List<Boat>(5);
+            try
+            {
+                for (int i = 0; i < amountOfBoats; i++)
+                {
+                    view.readBoatInfo();
+                    if (view.getboatlength <= 0 ||String.IsNullOrWhiteSpace(view.getboattype))
+                    {
+                        throw new ArgumentOutOfRangeException();
+                    }
+                    MemberBoats.Add(new Boat(view.getboatlength, view.getboattype));
+                }
+            }
+            catch
+            {
+                view.ErrorMess("Fel hände när båt data skrevs in.");
+            }
+
+            return MemberBoats;
+        }
+
+    //    public Member Edit(Member m)
+    //    {
+    //        int choice = view.EditMemberInfo(m);
+
+    //        if (choice == 1)
+    //        {
+    //            view.editPersonalInfo(m);
+
+    //            m.FirstName = view.getfirstname;
+    //            m.LastName = view.getlastname;
+    //            m.PersonalNumber = view.getpersnr;
+    //        }
+    //        else if (choice == 2)
+    //        {
+    //            view.editBoatInfo(m);
+
+    //            m.Boats[choice].Lenght = view.getboatlength;
+    //            m.Boats[choice].BoatType = view.getboattype;
+    //        }
+    //        else
+    //            throw new ArgumentOutOfRangeException();
+
+    //        return m;
+    //    }
     }
 }

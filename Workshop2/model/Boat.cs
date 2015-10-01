@@ -8,6 +8,25 @@ namespace Workshop2.model
 {
     class Boat
     {
-        //TODO: Plan this class later on.
+        private double _length;
+
+        private string _boatType;
+
+        public double Lenght
+        {
+            get { return _length; }
+            set { _length = value; }
+        }
+
+        public string BoatType 
+        {
+            get { return _boatType; }
+            set { _boatType = value; }
+        }
+
+        public Boat(double length, string boatType) {
+            _length = length;
+            _boatType = boatType;
+        }
     }
 }

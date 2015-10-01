@@ -26,10 +26,11 @@ namespace Workshop2.model
         private string LastName;
         private string MemberID;
         private string PersonalNumber;
-        private List<Boat> Boats;
 
         //list of all members
         private List<Member> Members;
+        //List of a members boats
+        private List<Boat> MemberBoats;
 
         //Enum of current status for the reader.
         private enum MemberReadStatus { Indefinite, MemberFirstName, MemberLastName, MemberID, MemberPersonalNumber, Boats };
@@ -45,6 +46,8 @@ namespace Workshop2.model
         public List<Member> ReadMembers()
         {
             Members = new List<Member>(100);
+            MemberBoats = new List<Boat>(5);
+
             Name = null;
 
             using (StreamReader read = new StreamReader(_path))
@@ -76,7 +79,7 @@ namespace Workshop2.model
                             CurrentStatus = MemberReadStatus.Boats;
                         }
                         else if(reader == sectionEnd){
-                            Member member = new Member(Name, LastName, PersonalNumber, MemberID, Boats);
+                            Member member = new Member(Name, LastName, PersonalNumber, MemberBoats, MemberID);
                             Members.Add(member);
                         }
                         else
@@ -88,7 +91,7 @@ namespace Workshop2.model
                                     //if name isent null a person just was read in.
                                     if (Name != null)
                                     {
-                                        Member member = new Member(Name, LastName, PersonalNumber, MemberID, Boats);
+                                        Member member = new Member(Name, LastName, PersonalNumber, MemberBoats, MemberID);
                                         Members.Add(member);
                                         //create new member object and att it to the list
                                     }
@@ -109,7 +112,9 @@ namespace Workshop2.model
                                     break;
 
                                 case MemberReadStatus.Boats:
-                                    //TODO: add boat objects to the boat list.                                
+                                    string[] BoatInfo = reader.Split(new char[] { ';' }, StringSplitOptions.None);
+
+                                    MemberBoats.Add(new Boat(double.Parse(BoatInfo[0]), BoatInfo[1]));                           
                                     break;
                                 
                                 default:
@@ -187,7 +192,9 @@ namespace Workshop2.model
                     writer.WriteLine(m.PersonalNumber);
 
                     writer.WriteLine(sectionBoats);
-                    //TODO: Write in boats here!
+                    foreach (Boat boat in m.Boats) {
+                        writer.WriteLine("{0};{1}", boat.Lenght, boat.BoatType);
+                    }
                 }
                 writer.WriteLine(sectionEnd);
             }
