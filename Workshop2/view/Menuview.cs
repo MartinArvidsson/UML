@@ -13,27 +13,30 @@ namespace Workshop2.view
         private string[] diffrentBoatTypes = new string[4] { "Sailboat", "Motorsailer", "Kayak/Canoe", "Other" };
         private string firstname = "";
         private string lastname = "";
-        private string persnr = "";
+        private string persnr = ""; //Variablar för div, parametrar som ska skickas in för att registeras
         private double boatLength;
         private string typeofboat;
+        private int b;
+
+
         private int boatnumber = 1;
-        private int deletechoice;
+        private int deletechoice; //Variablar för att kolla vad användaren väljer, samt div. yes/no checkar.
         private int deleteconfirmation;
 
-        private int b;
-        private int i;
+        
+        private int i; //Används i alla loopar
 
         private int Listchecker;
-        private int viewspecificuser;
+        private int viewspecificuser; //Div.
         private int boatchoice;
         private int editchoice;
 
-        private int menuChoice;
+        private int menuChoice; //Håller koll på menyval.
 
-        private string updateMess;
+        private string updateMess; //Meddelandet efter en slutförd uppgift presenteras här.
+         
 
-
-        public int StartMenu()
+        public int StartMenu() //Presenterar startmeny, man väljer alternativ och tas vidare till dom olika funktionerna via Controllern.
         {
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("===============================");
@@ -64,13 +67,13 @@ namespace Workshop2.view
             return menuChoice;           
         }
 
-        public int EditMenu()
+        public int EditMenu() //Håller koll på menyvalen.
         {
             int choiceEdit = int.Parse(Console.ReadLine());
             return choiceEdit;
         }
 
-        public int registerperson()
+        public int registerperson() //Funktionen för att registera en ny användare, matar in parametrar samt båtparametrar.
         {
             Console.WriteLine("you chose new person!\n");
             Console.WriteLine("Firstname:");
@@ -87,22 +90,22 @@ namespace Workshop2.view
         }
 
         //Funktionerna som anropas efter att man har registerat en användare för att få ut datan.
-        public string getfirstname
+        public string getfirstname //Funktioner för att hämta datan till controllern som ska in i model
         {
             get { return firstname; }
         }
 
-        public string getlastname
+        public string getlastname//Funktioner för att hämta datan till controllern som ska in i model
         {
             get { return lastname; }
         }
 
-        public string getpersnr
+        public string getpersnr//Funktioner för att hämta datan till controllern som ska in i model
         {
             get { return persnr; }
         }
 
-        public Member editperson(List<Member> Persons)
+        public Member editperson(List<Member> Persons) //Redigera en person, Byt information eller båtinformation, eller lägga till fler båtar på en redan existerande användare.
         {
             foreach (var member in Persons)
             {
@@ -118,14 +121,15 @@ namespace Workshop2.view
             if (editchoice != 0) 
             {
                 Console.Clear();
-                Console.WriteLine("1:Edit person");
-                Console.WriteLine("2:Edit boats");
+                Console.WriteLine("1:change personinformation");
+                Console.WriteLine("2:change boatinformation");
+                Console.WriteLine("3.Add boat to existing member");
             }
             return Persons[editchoice - 1];
         }
 
 
-        public void editPersonalInfo(Member membertoedit)
+        public void editPersonalInfo(Member membertoedit) //Funktionen för att byta ut personinformationen.
         {
             Console.WriteLine("Current first name: {0}", membertoedit.FirstName);
             Console.WriteLine("Current last name: {0}", membertoedit.LastName);
@@ -146,7 +150,7 @@ namespace Workshop2.view
 
         }
 
-        public void editBoatInfo(Member _membertoedit)
+        public void editBoatInfo(Member _membertoedit) //Funktionen för att byta ut båtinformationen.
         {
             int i = 0;
 
@@ -176,29 +180,34 @@ namespace Workshop2.view
             updateMess = String.Format("You have just updated the boat {0} with the length: {1}\n To the boat {3} with the Length {4}", _membertoedit.Boats[b].BoatType, _membertoedit.Boats[b].Length, typeofboat, boatLength);
         }
 
-        public int getcurrentboat
+        public void AddnewBoat(Member membertoaddboat) //Funktionen för att bara lägga till en båt på redan existerande användare. WIP
+        {
+            Console.WriteLine("Here you will be able to add a boat to an already existing user!");
+        }
+
+        public int getcurrentboat //Funktioner för att hämta datan till controllern som ska in i model
         {
             get { return b; }
         }
 
-        public string getboattype
+        public string getboattype//Funktioner för att hämta datan till controllern som ska in i model
         {
             get { return typeofboat; }
         }
 
-        public double getboatlength
+        public double getboatlength//Funktioner för att hämta datan till controllern som ska in i model
         {
             get { return boatLength; }
         }
 
 
-        public int EditMemberInfo(Member m)
+        public int EditMemberInfo(Member m) 
         {
             int choice = int.Parse(Console.ReadLine());
             return choice;
         }
         
-        public Member Deletechoice(List<Member> Persons)
+        public Member Deletechoice(List<Member> Persons) //Välj om båt eller hela användaren ska bort.
         {
             foreach (var member in Persons)
             {
@@ -217,9 +226,9 @@ namespace Workshop2.view
             }
             return Persons[deletechoice - 1];
         }
-        
 
-        public Member deleteperson(Member toDelete)
+
+        public Member deleteperson(Member toDelete)//Funktionen då man ska ta bort en användare permanent.
         {
             Console.WriteLine("Do you really want to delete this person? This action cannot be reverted");
             Console.WriteLine("1.Yes");
@@ -235,23 +244,24 @@ namespace Workshop2.view
 
         }
 
-        public void DeleteBoat(Member _toDelete)
+        public void DeleteBoat(Member _toDelete) // Ta bort en båt från en redan existerande användare.
         {
             Console.WriteLine("Choose a boat from the person that you would like to remove:");
             i = 0;
             foreach (Boat boat in _toDelete.Boats)
             {
-                i++;
-                Console.WriteLine("{0} Length: {1}m, Type: {2}", i, boat.Length, boat.BoatType);
+                boatnumber++;
+                Console.WriteLine("{0} Length: {1}m, Type: {2}", boatnumber, boat.Length, boat.BoatType);
 
             }
+            boatnumber = 1;
             b = EditMenu() - 1;
             Console.WriteLine("Current boatchoice name: {0}, Length {1}", _toDelete.Boats[b].BoatType, _toDelete.Boats[b].Length);
 
             updateMess = string.Format("The boat {0} with the length {1} was removed from {2} {3}", _toDelete.Boats[b].BoatType, _toDelete.Boats[b].Length, _toDelete.FirstName, _toDelete.LastName);
         }
 
-        public void Viewperson(List<Member> Persons)
+        public void Viewperson(List<Member> Persons) //Välj hur du ska visa upp alla personer i "databasen" , compact,verbose eller specifik.
         {
 
                 Console.WriteLine("Du chose view person!");
@@ -280,7 +290,7 @@ namespace Workshop2.view
         }
 
 
-        public void listpersoncompact(List<Member> Persons)
+        public void listpersoncompact(List<Member> Persons) //Listar alla personer i databasen enligt en "compactlist"
         {
             Console.WriteLine("You chose compact list!");
             i = 0;
@@ -291,7 +301,7 @@ namespace Workshop2.view
             }
         }
 
-        public void listpersonverbose(List<Member> Persons)
+        public void listpersonverbose(List<Member> Persons) //Listar alla personer i databasen enligt en "Verboselist"
         {
            Console.WriteLine("You chose verbose list!\n\n");
            i = 0;
@@ -301,12 +311,12 @@ namespace Workshop2.view
                if (member.Boats.Count > 0)
                {
                    for (var _i = 0; _i < member.Boats.Count; _i++)
-                   //for ()
                    {
-                       _i++;
-                       Console.WriteLine("{0}:\nFirstname: {1}\nLastname: {2}\nPersonID: {3}\nMemberID: {4}\nBoatinfo : Number of boats: {5}\nBoattype: {6}\nBoatlength: {7}\n", _i, member.FirstName, member.LastName, member.PersonalNumber, member.MemberID, member.Boats.Count, member.Boats[i].BoatType, member.Boats[i].Length);
+                       boatnumber++;
+                       Console.WriteLine("{0}:\nFirstname: {1}\nLastname: {2}\nPersonID: {3}\nMemberID: {4}\nBoatinfo : Number of boats: {5}\nBoattype: {6}\nBoatlength: {7}\n", boatnumber, member.FirstName, member.LastName, member.PersonalNumber, member.MemberID, member.Boats.Count, member.Boats[i].BoatType, member.Boats[i].Length);
                        Console.WriteLine("");
                    }
+                   boatnumber = 1;
                }
                else
                {
@@ -316,7 +326,7 @@ namespace Workshop2.view
            }
         }
 
-        public void listpersonspecific(List<Member> Persons)
+        public void listpersonspecific(List<Member> Persons) //Listar ut 1 specifik medlem enligt instruktioner.
         {
             Console.WriteLine("You chose specific person\n");
             Console.WriteLine("Choose a person to look at details");
@@ -331,7 +341,7 @@ namespace Workshop2.view
 
             if (viewspecificuser < 0 || viewspecificuser > Persons.Count)
             {
-                throw new ArgumentOutOfRangeException(); //Flytta till controller
+                throw new ArgumentOutOfRangeException(); //Flytta till controller undantag ska inte kastas i vyn, ska hanteras i controllern.
             }
             Member toview = Persons[viewspecificuser - 1];
 
@@ -343,7 +353,7 @@ namespace Workshop2.view
             {
                 for (i = 0; i < toview.Boats.Count; i++)
                 {
-                    Console.WriteLine("Person has a boat of the {0} type, with the length {1} Meters", toview.Boats[i].BoatType, toview.Boats[i].Length);
+                    Console.WriteLine("{0} has a boat of the {1} type, with the length {2} Meters",toview.FirstName, toview.Boats[i].BoatType, toview.Boats[i].Length);
                     Console.WriteLine("");
                 }
             }
@@ -351,20 +361,16 @@ namespace Workshop2.view
             {
                 Console.WriteLine("The person had no boats");
             }
-
-            
-            //Visa upp enbart alla personer med Name,MemberID,NumberofBoats
-            //
         }
 
-        public void ErrorMess(string message)
+        public void ErrorMess(string message) //Errormessages presenteras enligt denna, meddelandena skapas i model.
         {
             updateMess = message;
         }
 
 
         //reads in boat info, info is returned by properties
-        public void readBoatInfo()
+        public void readBoatInfo() //Funktion för att skapa båtobjekt till en båtlista.
         {
             
             Console.WriteLine("\nNew Boat:");
