@@ -12,7 +12,7 @@ namespace Workshop2.model
 
         private string _boatType;
 
-        public double Lenght
+        public double Length
         {
             get { return _length; }
             set { _length = value; }

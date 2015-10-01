@@ -15,6 +15,7 @@ namespace Workshop2.controller
 
         private int choice;
         private int boattoedit;
+        private int boattodelete;
 
         public void Runapplication()
         {
@@ -52,11 +53,9 @@ namespace Workshop2.controller
                 case 2:
                     try
                     {
-                        //Member UpdatedMember = Edit(view.editperson(memberDAL.ReadMembers()));
-                        //memberDAL.EditMember(UpdatedMember);
                         Console.Clear();
-                        Member m = view.editperson(memberDAL.ReadMembers());
-                        switch (view.EditMenu())
+                        Member m = view.editperson(memberDAL.ReadMembers()); //Fel här, hämtar ut en lista av ALLA medlemmar, detta leder till att alla båtobjekt kommer med så väljer man t.ex
+                        switch (view.EditMenu())//Person 1 kommer alla båtar även för pers. 2 / 3 hämtas ut via .Boats attributet.
                         {
                             case 1:
                                 view.editPersonalInfo(m);
@@ -68,8 +67,8 @@ namespace Workshop2.controller
                             case 2:
                                 view.editBoatInfo(m);
 
-                                boattoedit = view.returncurrentboat;
-                                m.Boats[boattoedit].Lenght = view.getboatlength;
+                                boattoedit = view.getcurrentboat;
+                                m.Boats[boattoedit].Length = view.getboatlength;
                                 m.Boats[boattoedit].BoatType = view.getboattype;
 
                                 break;
@@ -79,7 +78,7 @@ namespace Workshop2.controller
                     }
                     catch
                     {
-                        //view.ErrorMess("Kunde inte redigera båt / Person.");
+                        view.ErrorMess("Kunde inte redigera båt / Person.");
                     }
                     
                     break;
@@ -87,14 +86,39 @@ namespace Workshop2.controller
                 case 3:
                     try
                     {
-                        Member membertotdelete = view.deleteperson(memberDAL.ReadMembers());
+                        Console.Clear();
+                        Member toDelete = view.Deletechoice(memberDAL.ReadMembers());
+                        switch (view.EditMenu())
+                        {
+                            case 1:
+                                view.deleteperson(toDelete);
+                                memberDAL.RemoveMember(toDelete);
+                                break;
 
-                        memberDAL.RemoveMember(membertotdelete);
+                            case 2:
+                                view.DeleteBoat(toDelete);
+                                boattodelete = view.getcurrentboat;
+                                //memberDAL.RemoveBoat(toDelete.Boats[boattodelete]); Paramentern som ska skickas till där man deletar en båt.
+                                break;
+                        }
+                        
+
                     }
                     catch
                     {
-                        view.ErrorMess("Ditt val av person som skulle tas bort existerade inte.");
+                        view.ErrorMess("Kunde inte redigera båt / Person.");
                     }
+
+                    //try
+                    //{
+                    //    Member membertotdelete = view.deleteperson(memberDAL.ReadMembers());
+
+                    //    memberDAL.RemoveMember(membertotdelete);
+                    //}
+                    //catch
+                    //{
+                    //    view.ErrorMess("Ditt val av person som skulle tas bort existerade inte.");
+                    //}
                     Console.Clear();
                     break;
 

@@ -193,7 +193,7 @@ namespace Workshop2.model
 
                     writer.WriteLine(sectionBoats);
                     foreach (Boat boat in m.Boats) {
-                        writer.WriteLine("{0};{1}", boat.Lenght, boat.BoatType);
+                        writer.WriteLine("{0};{1}", boat.Length, boat.BoatType);
                     }
                 }
                 writer.WriteLine(sectionEnd);

@@ -29,3 +29,7 @@ C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\normnfc.nlp
 C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\normnfd.nlp
 C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\normnfkc.nlp
 C:\Users\ma223ku\Documents\GitHub\UML\Workshop2\bin\Debug\normnfkd.nlp
+C:\Users\Martin\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.pdb
+C:\Users\Martin\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe
+C:\Users\Martin\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.pdb
+C:\Users\Martin\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache
