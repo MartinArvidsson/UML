@@ -19,12 +19,20 @@ namespace Workshop2.controller
 
         public void Runapplication()
         {
-            
 
-            choice = view.StartMenu();
-
-
-            MenuChoice();
+            try
+            {
+                view.StartMenu();
+                choice = view.EditMenu();
+                if (choice >= 0 && choice <= 4)
+                {
+                    MenuChoice();
+                }
+            }
+            catch
+            {
+                view.ErrorMess("Not valid input!");
+            }
         }
 
         public void MenuChoice()

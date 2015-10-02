@@ -21,23 +21,20 @@ namespace Workshop2.view
 
         private int boatnumber = 1;
         private int deletechoice; //Variablar för att kolla vad användaren väljer, samt div. yes/no checkar.
-        private int deleteconfirmation;
 
         
         private int i; //Används i alla loopar
 
-        private int Listchecker;
         private int viewspecificuser; //Div.
         private int boatchoice;
         private int editchoice;
 
-        private int menuChoice; //Håller koll på menyval.
-
         private string updateMess; //Meddelandet efter en slutförd uppgift presenteras här.
          
 
-        public int StartMenu() //Presenterar startmeny, man väljer alternativ och tas vidare till dom olika funktionerna via Controllern.
+        public void StartMenu() //Presenterar startmeny, man väljer alternativ och tas vidare till dom olika funktionerna via Controllern.
         {
+            Console.Clear();
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("===============================");
             Console.WriteLine("=            MENU             =");
@@ -49,22 +46,7 @@ namespace Workshop2.view
             Console.WriteLine("3.Delete person");
             Console.WriteLine("4.view Person");
             Console.WriteLine(updateMess);
-            updateMess = "";
-            try
-            {
-                menuChoice = int.Parse(Console.ReadLine());
-                if (menuChoice < 0 || menuChoice > 4)
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
-            }
-            catch
-            {
-                Console.BackgroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("\nInput was not valid number beween [1 - 5] please!\n");
-                Console.ResetColor();
-            }
-            return menuChoice;           
+            updateMess = "";     
         }
 
         public int EditMenu() //Håller koll på menyvalen.
@@ -270,6 +252,7 @@ namespace Workshop2.view
                 Console.WriteLine("Du chose view person!");
                 //fråga om verbose eller compact list, efter det visas alla medlemmar enligt den valda listan
                 Console.WriteLine("What type of list do you want");
+                Console.WriteLine("0: Go back");
                 Console.WriteLine("1: Compact");
                 Console.WriteLine("2: Verbose");
                 Console.WriteLine("3: Specific person");
