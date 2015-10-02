@@ -11,7 +11,7 @@ namespace Workshop2.model
     class MemberDAL
     {
         //path to .txt file
-        private string _path = "database.txt";
+        private string _path = "../../Data/Database.txt";
 
         //varibels that represents diffrent sections in the .txt file
         private string sectionMemberName = "[MemberName]";

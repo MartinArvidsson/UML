@@ -58,7 +58,7 @@
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\Database.txt" />
+    <Content Include="Data\Database.txt" />
     <Content Include="bin\Debug\Workshop2.vshost.exe" />
     <Content Include="obj\Debug\Workshop2.csproj.FileListAbsolute.txt" />
     <None Include="obj\Debug\Workshop2.csprojResolveAssemblyReference.cache" />
