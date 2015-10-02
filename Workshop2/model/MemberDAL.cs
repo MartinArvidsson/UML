@@ -78,9 +78,11 @@ namespace Workshop2.model
                         {
                             CurrentStatus = MemberReadStatus.Boats;
                         }
-                        else if(reader == sectionEnd){
+                        else if(reader == sectionEnd && Name != null){
                             Member member = new Member(Name, LastName, PersonalNumber, MemberBoats, MemberID);
                             Members.Add(member);
+                            //clears the list for the next member object
+                            MemberBoats = new List<Boat>(5);
                         }
                         else
                         {
@@ -94,6 +96,9 @@ namespace Workshop2.model
                                         Member member = new Member(Name, LastName, PersonalNumber, MemberBoats, MemberID);
                                         Members.Add(member);
                                         //create new member object and att it to the list
+
+                                        //clears the list for the next member object
+                                        MemberBoats = new List<Boat>(5);
                                     }
                                     Name = reader;
                                     break;

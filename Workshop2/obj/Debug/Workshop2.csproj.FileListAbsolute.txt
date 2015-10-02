@@ -27,3 +27,9 @@ C:\Users\Martin\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.pdb
 C:\Users\Martin\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.exe
 C:\Users\Martin\Documents\GitHub\UML\Workshop2\bin\Debug\Workshop2.pdb
 C:\Users\Martin\Documents\GitHub\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache
+P:\1DV607- Objekt ananlys och design med UML\UML\Workshop2\bin\Debug\Workshop2.exe.config
+P:\1DV607- Objekt ananlys och design med UML\UML\Workshop2\obj\Debug\Workshop2.exe
+P:\1DV607- Objekt ananlys och design med UML\UML\Workshop2\obj\Debug\Workshop2.pdb
+P:\1DV607- Objekt ananlys och design med UML\UML\Workshop2\bin\Debug\Workshop2.exe
+P:\1DV607- Objekt ananlys och design med UML\UML\Workshop2\bin\Debug\Workshop2.pdb
+P:\1DV607- Objekt ananlys och design med UML\UML\Workshop2\obj\Debug\Workshop2.csprojResolveAssemblyReference.cache

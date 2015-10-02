@@ -89,6 +89,7 @@ namespace Workshop2.controller
                                     boattoedit = view.getcurrentboat;
                                     m.Boats[boattoedit].Length = view.getboatlength;
                                     m.Boats[boattoedit].BoatType = view.getboattype;
+
                                 }
                                 catch
                                 {
@@ -100,6 +101,8 @@ namespace Workshop2.controller
                                 try
                                 {
                                     view.AddnewBoat(m);
+                                    m.Boats.Add(new Boat(view.getboatlength, view.getboattype));
+                                    
                                     //Fuktion för att BARA lägga till en båt tack :3
                                     //MemberBoats.Add(new Boat(view.getboatlength, view.getboattype));
                                 }
@@ -141,7 +144,8 @@ namespace Workshop2.controller
                                 try
                                 {
                                     view.DeleteBoat(toDelete);
-                                    boattodelete = view.getcurrentboat;
+                                    toDelete.Boats.RemoveAt(view.getcurrentboat);
+                                    memberDAL.EditMember(toDelete);
                                 }
                                 catch
                                 {
@@ -166,7 +170,7 @@ namespace Workshop2.controller
                         view.Viewperson(memberDAL.ReadMembers());
                         switch (view.EditMenu())
                         {
-                            case 1: //TA BORT PERSON
+                            case 1:
                                 try
                                 {
                                     view.listpersoncompact(memberDAL.ReadMembers());
@@ -177,7 +181,7 @@ namespace Workshop2.controller
                                     view.ErrorMess("Something whent wrong when validating the data.");
                                 }
                                 break;
-                            case 2: //TA BORT EN BÅT
+                            case 2: 
                                 try
                                 {
                                     view.listpersonverbose(memberDAL.ReadMembers());
@@ -193,7 +197,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something went wrong did you write a correct number?");
+                                    view.ErrorMess("Something went wrong, did you write a correct number?");
                                 }
                                 break;
                         }

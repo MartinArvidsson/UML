@@ -19,7 +19,7 @@ namespace Workshop2.view
         private int b;
 
 
-        private int boatnumber = 1;
+        private int boatnumber = 0;
         private int deletechoice; //Variablar för att kolla vad användaren väljer, samt div. yes/no checkar.
 
         
@@ -34,7 +34,6 @@ namespace Workshop2.view
 
         public void StartMenu() //Presenterar startmeny, man väljer alternativ och tas vidare till dom olika funktionerna via Controllern.
         {
-            Console.Clear();
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("===============================");
             Console.WriteLine("=            MENU             =");
@@ -89,12 +88,13 @@ namespace Workshop2.view
 
         public Member editperson(List<Member> Persons) //Redigera en person, Byt information eller båtinformation, eller lägga till fler båtar på en redan existerande användare.
         {
+            i = 0;
             foreach (var member in Persons)
             {
                 i++;
                 Console.WriteLine("{0}:\nFirstname: {1}\nLastname: {2}\nPersonID: {3}\n", i, member.FirstName, member.LastName, member.PersonalNumber);
             }
-            i = 0;
+            
             Console.WriteLine("You chose edit\n");
 
             Console.WriteLine("Choose a person to edit from the list above");
@@ -139,40 +139,42 @@ namespace Workshop2.view
             foreach (Boat boat in _membertoedit.Boats)
             {
                 i++;
-                Console.WriteLine("{0} Length: {1}m, Type: {2}", i, boat.Length, boat.BoatType);
-                
+                Console.WriteLine("{0} Length: {1}m, Type: {2}", i, boat.Length, boat.BoatType);              
             }
 
             b = EditMenu() - 1;
             Console.WriteLine("Current boatchoice name: {0}, Length {1}", _membertoedit.Boats[b].BoatType, _membertoedit.Boats[b].Length); 
             Console.WriteLine("New Boattype:");
 
+            boatnumber = 0;
             for ( i = 0; i < diffrentBoatTypes.Length; i++)
             {
-                Console.WriteLine("{0}. {1}",boatnumber, diffrentBoatTypes[i]);
                 boatnumber++;
+                Console.WriteLine("{0}. {1}",boatnumber, diffrentBoatTypes[i]);           
             }
-            boatnumber = 1;
+            
             int choice = EditMenu() - 1;
             typeofboat = diffrentBoatTypes[choice];
 
             Console.WriteLine("New length:");
-            boatLength = int.Parse(Console.ReadLine());
+            boatLength = double.Parse(Console.ReadLine());
 
 
-            updateMess = String.Format("You have just updated the boat {0} with the length: {1}\n To the boat {3} with the Length {4}", _membertoedit.Boats[b].BoatType, _membertoedit.Boats[b].Length, typeofboat, boatLength);
+            updateMess = String.Format("You have just updated the boat {0} with the length: {1}\n To the boat {2} with the Length {3}", _membertoedit.Boats[b].BoatType, _membertoedit.Boats[b].Length, typeofboat, boatLength);
         }
 
         public void AddnewBoat(Member membertoaddboat) //Funktionen för att bara lägga till en båt på redan existerande användare. WIP
         {
             Console.WriteLine("What kind of boat ?");
 
+            boatnumber = 0;
             for (i = 0; i < diffrentBoatTypes.Length; i++)
             {
-                Console.WriteLine("{0}. {1}", boatnumber, diffrentBoatTypes[i]);
                 boatnumber++;
+                Console.WriteLine("{0}. {1}", boatnumber, diffrentBoatTypes[i]);
+                
             }
-            boatnumber = 1;
+            
             int choice = EditMenu() - 1;
             typeofboat = diffrentBoatTypes[choice];
 
@@ -205,12 +207,13 @@ namespace Workshop2.view
         
         public Member Deletechoice(List<Member> Persons) //Välj om båt eller hela användaren ska bort.
         {
+            i = 0;
             foreach (var member in Persons)
             {
                 i++;
                 Console.WriteLine("{0}: \nFirstname: {1}\nLastname: {2}\nPersonID: {3}\n", i, member.FirstName, member.LastName, member.PersonalNumber);
             }
-            i = 0;
+            
             Console.WriteLine("You chose delete\n");
             Console.WriteLine("Choose a person that you want to delete from from the list\n");
             deletechoice = int.Parse(Console.ReadLine());
@@ -233,13 +236,14 @@ namespace Workshop2.view
         {
             Console.WriteLine("Choose a boat from the person that you would like to remove:");
             i = 0;
+            boatnumber = 0;
             foreach (Boat boat in _toDelete.Boats)
             {
                 boatnumber++;
                 Console.WriteLine("{0} Length: {1}m, Type: {2}", boatnumber, boat.Length, boat.BoatType);
 
             }
-            boatnumber = 1;
+            
             b = EditMenu() - 1;
             Console.WriteLine("Current boatchoice name: {0}, Length {1}", _toDelete.Boats[b].BoatType, _toDelete.Boats[b].Length);
 
@@ -248,7 +252,6 @@ namespace Workshop2.view
 
         public void Viewperson(List<Member> Persons) //Välj hur du ska visa upp alla personer i "databasen" , compact,verbose eller specifik.
         {
-
                 Console.WriteLine("Du chose view person!");
                 //fråga om verbose eller compact list, efter det visas alla medlemmar enligt den valda listan
                 Console.WriteLine("What type of list do you want");
@@ -277,22 +280,16 @@ namespace Workshop2.view
            foreach (var member in Persons)
            {
                i++;
+               Console.WriteLine("\nMember {0}: \n Firstname: {1}\n Lastname: {2}\n Personalnumber: {3}\n Member ID: {4}\n Number of boats: {5}", i, member.FirstName, member.LastName, member.PersonalNumber, member.MemberID, member.Boats.Count);
                if (member.Boats.Count > 0)
                {
+                   Console.WriteLine("Boat info:");
                    for (var _i = 0; _i < member.Boats.Count; _i++)
                    {
-                       
-                       Console.WriteLine("{0}:\nFirstname: {1}\nLastname: {2}\nPersonID: {3}\nMemberID: {4}\nBoatinfo : Number of boats: {5}\nBoattype: {6}\nBoatlength: {7}\n",boatnumber, member.FirstName, member.LastName, member.PersonalNumber, member.MemberID, member.Boats.Count, member.Boats[_i].BoatType, member.Boats[_i].Length);
-                       Console.WriteLine("");
-                       boatnumber++;
+                       Console.WriteLine("{0}: Boat Type: {1}\n   Boat Length: {2}", _i + 1, member.Boats[_i].BoatType, member.Boats[_i].Length);
                    }
-                   boatnumber = 1;
                }
-               else
-               {
-                   Console.WriteLine("{0}:\nFirstname: {1}\nLastname: {2}\nPersonID: {3}\nMemberID: {4}\nBoatinfo : Number of boats: {5}\nBoattype: {6}\nBoatlength: {7}\n", i, member.FirstName, member.LastName, member.PersonalNumber, member.MemberID, member.Boats.Count, member.Boats[i].BoatType, member.Boats[i].Length);
-                   Console.WriteLine("\nPersonen hade inga båtar");
-               }
+               
            }
         }
 
