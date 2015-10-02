@@ -85,7 +85,7 @@ namespace Workshop2.view
             Console.WriteLine("Number of boats:");
             int numberOfboats = int.Parse(Console.ReadLine());
 
-            updateMess = String.Format("\n\nYou added:\n{0}, {1}, {2} \nperson will be registred aswell as the boats.", firstname, lastname, persnr);
+            updateMess = String.Format("you wrote:\n {0}, {1}, {2} \nperson will be registred aswell as the boats.", firstname, lastname, persnr);
             return numberOfboats;        
         }
 
@@ -164,7 +164,6 @@ namespace Workshop2.view
             b = EditMenu() - 1;
             Console.WriteLine("Current boatchoice name: {0}, Length {1}", _membertoedit.Boats[b].BoatType, _membertoedit.Boats[b].Length); 
             Console.WriteLine("New Boattype:");
-
             for ( i = 0; i < diffrentBoatTypes.Length; i++)
             {
                 Console.WriteLine("{0}. {1}",boatnumber, diffrentBoatTypes[i]);
@@ -183,20 +182,7 @@ namespace Workshop2.view
 
         public void AddnewBoat(Member membertoaddboat) //Funktionen för att bara lägga till en båt på redan existerande användare. WIP
         {
-            Console.WriteLine("What kind of boat ?");
-
-            for (i = 0; i < diffrentBoatTypes.Length; i++)
-            {
-                Console.WriteLine("{0}. {1}", boatnumber, diffrentBoatTypes[i]);
-                boatnumber++;
-            }
-            boatnumber = 1;
-            int choice = EditMenu() - 1;
-            typeofboat = diffrentBoatTypes[choice];
-
-            Console.WriteLine("New length:");
-            boatLength = int.Parse(Console.ReadLine());
-
+            Console.WriteLine("Here you will be able to add a boat to an already existing user!");
         }
 
         public int getcurrentboat //Funktioner för att hämta datan till controllern som ska in i model
@@ -244,7 +230,18 @@ namespace Workshop2.view
 
         public Member deleteperson(Member toDelete)//Funktionen då man ska ta bort en användare permanent.
         {
+            Console.WriteLine("Do you really want to delete this person? This action cannot be reverted");
+            Console.WriteLine("1.Yes");
+            Console.WriteLine("2.No");
+
+            deleteconfirmation = int.Parse(Console.ReadLine());
+
+            if (deleteconfirmation == 1)
+            { 
                 return toDelete;
+            }
+            return null;
+
         }
 
         public void DeleteBoat(Member _toDelete) // Ta bort en båt från en redan existerande användare.
@@ -269,10 +266,27 @@ namespace Workshop2.view
 
                 Console.WriteLine("Du chose view person!");
                 //fråga om verbose eller compact list, efter det visas alla medlemmar enligt den valda listan
-                Console.WriteLine("What type of list do you want");
+                Console.WriteLine("What type of list shall i show?");
                 Console.WriteLine("1: Compact");
                 Console.WriteLine("2: Verbose");
                 Console.WriteLine("3: Specific person");
+
+                Listchecker = int.Parse(Console.ReadLine());
+
+                if (Listchecker == 1)
+                {
+                    listpersoncompact(Persons);
+                }
+                else if(Listchecker == 2)
+                {
+                    listpersonverbose(Persons);
+                }
+                else if (Listchecker == 3)
+                {
+                    listpersonspecific(Persons);
+                }
+                else
+                    throw new ArgumentOutOfRangeException();
         }
 
 
@@ -325,6 +339,11 @@ namespace Workshop2.view
             }
 
             viewspecificuser = int.Parse(Console.ReadLine());
+
+            if (viewspecificuser < 0 || viewspecificuser > Persons.Count)
+            {
+                throw new ArgumentOutOfRangeException(); //Flytta till controller undantag ska inte kastas i vyn, ska hanteras i controllern.
+            }
             Member toview = Persons[viewspecificuser - 1];
 
 

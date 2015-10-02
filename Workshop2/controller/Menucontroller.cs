@@ -57,30 +57,48 @@ namespace Workshop2.controller
                         Member m = view.editperson(memberDAL.ReadMembers()); //Fel här, hämtar ut en lista av ALLA medlemmar, detta leder till att alla båtobjekt kommer med så väljer man t.ex
                         switch (view.EditMenu())//Person 1 kommer alla båtar även för pers. 2 / 3 hämtas ut via .Boats attributet.
                         {
-                            case 1: //UPDATERA PERSONINFORMATION
+                                	        
+		                        case 1: //UPDATERA PERSONINFORMATION
+                                try
+                                {
                                 view.editPersonalInfo(m);
                                 m.FirstName = view.getfirstname;
                                 m.LastName = view.getlastname;
                                 m.PersonalNumber = view.getpersnr;
+                                
+	                            }
+	                            catch
+	                            {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+	                            }
                                 break;
 
                             case 2: //UPDATERA BÅTINFORMATION
-                                view.editBoatInfo(m);
+                                try
+                                {
+                                    view.editBoatInfo(m);
 
-                                boattoedit = view.getcurrentboat;
-                                m.Boats[boattoedit].Length = view.getboatlength;
-                                m.Boats[boattoedit].BoatType = view.getboattype;
-
+                                    boattoedit = view.getcurrentboat;
+                                    m.Boats[boattoedit].Length = view.getboatlength;
+                                    m.Boats[boattoedit].BoatType = view.getboattype;
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                }
                                 break;
 
-                            case 3: //SKAPA EN NY BÅT OCH LÄGG TILL PÅ EXISTERANDE ANVÄNDARE.
-                                //List<Boat> boats = CreateMemberBoats(view.registerperson());
-                                //Member newMember = new Member(view.getfirstname, view.getlastname, view.getpersnr, boats);
-                                //memberDAL.AddMember(newMember);
-                                
-                                view.AddnewBoat(m);
-                                //BEHÖVER FUNKTION FÖR ATT LÄGGA TILL ENBART 1 BÅT. 
-
+                            case 3:
+                                try
+                                {
+                                    view.AddnewBoat(m);
+                                    //Fuktion för att BARA lägga till en båt tack :3
+                                    //MemberBoats.Add(new Boat(view.getboatlength, view.getboattype));
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                }
                                 break;
                         }
                         memberDAL.EditMember(m);
@@ -101,13 +119,26 @@ namespace Workshop2.controller
                         switch (view.EditMenu())
                         {
                             case 1: //TA BORT PERSON
+                                try{
                                 view.deleteperson(toDelete);
                                 memberDAL.RemoveMember(toDelete);
+                                
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                }
                                 break;
-
                             case 2: //TA BORT EN BÅT
-                                view.DeleteBoat(toDelete);
-                                boattodelete = view.getcurrentboat;
+                                try
+                                {
+                                    view.DeleteBoat(toDelete);
+                                    boattodelete = view.getcurrentboat;
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                }
                                 break;
                         }
                         
@@ -121,8 +152,49 @@ namespace Workshop2.controller
                     break;
 
                 case 4: //VIEW
-                    Console.Clear();
-                    view.Viewperson(memberDAL.ReadMembers());
+                    try
+                    {
+                        Console.Clear();
+                        view.Viewperson(memberDAL.ReadMembers());
+                        switch (view.EditMenu())
+                        {
+                            case 1: //TA BORT PERSON
+                                try
+                                {
+                                    view.listpersoncompact(memberDAL.ReadMembers());
+
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                }
+                                break;
+                            case 2: //TA BORT EN BÅT
+                                try
+                                {
+                                    view.listpersonverbose(memberDAL.ReadMembers());
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                }
+                                break;
+                            case 3:
+                                try{
+                                    view.listpersonspecific(memberDAL.ReadMembers());
+                                }
+                                catch
+                                {
+                                    view.ErrorMess("Something went wrong did you write a correct number?");
+                                }
+                                break;
+                        }
+                    }
+                    catch 
+                    {
+
+                        view.ErrorMess("Kunde inte kolla personer, förmoldigen tom databas.\n lägg till medlemmar!");
+                    }
                     break;
             }
 
