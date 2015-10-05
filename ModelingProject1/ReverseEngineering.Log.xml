@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-10-05T14:20:35" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '8ae42075-c2dc-4ea6-b495-6d59b47993f9' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;Boat‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;Member‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2' -  (Package)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model' -  (Package)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat' -  (Class)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::_boatType' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::_length' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::Boat' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::Boat::boatType' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::Boat::length' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::BoatType' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Boat::Length' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member' -  (Class)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::_FirstName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::_LastName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::_MemberBoats' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::_MemberID' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::_PersonalNr' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Boats' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::FirstName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::LastName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Member' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Member::_firstName' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Member::_lastName' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Member::_memberBoats' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Member::_memberID' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::Member::_personalNr' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::MemberID' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::Member::PersonalNumber' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL' -  (Class)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::_path' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::AddMember' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::AddMember::member' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::EditMember' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::EditMember::member' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::LastName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::MemberBoats' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::MemberDAL' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::MemberID' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::Members' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::Name' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::PersonalNumber' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::ReadMembers' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::RemoveMember' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::RemoveMember::member' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::Save' -  (Operation)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::Save::_members' -  (Parameter)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::sectionBoats' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::sectionEnd' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::sectionMemberID' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::sectionMemberLastName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::sectionMemberName' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberDAL::sectionPersonalNumber' -  (Property)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus' -  (Enumeration)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus::Boats' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus::Indefinite' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus::MemberFirstName' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus::MemberID' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus::MemberLastName' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Workshop2::model::MemberReadStatus::MemberPersonalNumber' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::Workshop2::model::Member to ModelingProject1::System::Collections::Generic::List&lt;Boat‎&gt; (Association)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::Workshop2::model::Boat to ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="High" Text="(4) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="High" Text="(4) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-10-05T14:20:55" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

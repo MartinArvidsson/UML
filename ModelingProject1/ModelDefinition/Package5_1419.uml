@@ -1,0 +1,3392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="198278d8-e99a-4789-8040-20b304ec58ec"
+  name="model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="186ea646-960b-4536-a668-a2d813637d6a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWorkshop2.model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="245f6400-f933-4ce9-a04f-7b76d9b89bfc">
+      <profileInstance
+        Id="d015be86-7df5-4d1f-8019-9608dcac56d1"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f704f641-0522-4916-88db-d7d113b170ed"
+        name="Boat"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3aa0fe66-5735-48aa-bc04-4b735c53f137"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8dbbd01f-0775-4a22-9707-28163247407d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c184558a-15d0-4d12-b680-679408278c6d">
+                <propertyInstance
+                  Id="457231e3-d684-4ad5-a1d8-2cccf3591871"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35180502-8925-4b62-9862-3dd4bfb55b65">
+                <propertyInstance
+                  Id="30863429-9d84-4d93-8090-c1feb46fc470"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41312d75-e359-4e45-9f2f-d254a0752584">
+                <propertyInstance
+                  Id="2e7a8c67-c7f0-4fe3-bee4-eea8a0a80eb5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a009f9d-74d0-41b3-afd6-d1593eecd10e">
+                <propertyInstance
+                  Id="672dacff-1ced-415c-86ba-b92e19b9ed5b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20dd26ea-2766-4c30-802a-30a399183a8d">
+                <propertyInstance
+                  Id="206b95b3-46f2-4931-9ffe-def1e19ace56"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="2e889b35-59f2-44a1-b883-4301fd419a9a"
+            isDerived="false"
+            sourceEndRoleName="Boat"
+            targetEndRoleName="Length"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7d35bfe8-136f-4008-982a-e267e41d1e19"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1419.uml" />
+            <description>Property Length references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ccafbd90-35be-4f7c-83e1-9cd80ac0137f"
+                  name="Boat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="66dd6a29-8b5d-4a7b-a616-18e99fff96a0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d6b0f2b0-b7a2-4c63-a6c8-ea133dcfd809"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b1bab45-310d-4da7-989c-a4ce54e45f97"
+                  name="Length"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8880c708-5b3b-430c-92cf-c673ac312f3b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ca252bfb-6469-4d82-9bc8-f4c860ad7b20"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dcf33a82-9ff2-406c-91d1-db88f117c300"
+            name="Length"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3ebfc4b2-600d-43e6-848a-8f4015824471"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3DLength"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b66d1c6-6d96-457d-bdd8-0d67cfd222f4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a1f83a7-8a47-4d6f-a405-cda23fbb3357">
+                    <propertyInstance
+                      Id="adc1f2f4-aee6-4540-9bfd-5682c4afe852"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b23e4c51-78c0-4e3b-99b7-9ed9a1ca4c8f">
+                    <propertyInstance
+                      Id="1acba692-2d82-4f12-8a8d-281c9524c032"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40754243-b914-47b2-886b-93ff94e147f1">
+                    <propertyInstance
+                      Id="882bc362-dff1-4fdc-8168-8bec84b9d29b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86677ca7-42f2-4589-9908-d1bf4c63f2f6">
+                    <propertyInstance
+                      Id="ac4ac810-ad0e-4779-889e-f401028e1107"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f2fb926-5c33-4779-8694-63f1e49f540b">
+                    <propertyInstance
+                      Id="26cd1270-9382-424c-a467-c4e5be26a261"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e43ca261-a164-48eb-b7b6-6466e97983a0">
+                    <propertyInstance
+                      Id="fa8a75f6-90b0-4960-b107-e39a0790d1a0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a362d270-0b95-4086-a8b8-c716091239ea">
+                    <propertyInstance
+                      Id="fe50965e-1827-46f4-a604-b3027e8d7d2a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7d35bfe8-136f-4008-982a-e267e41d1e19"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1419.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd299f9a-00fd-4cfa-9362-2af60371b7fb"
+            name="BoatType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="baaa689f-c6d8-4590-be33-21c1a871f670"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3DBoatType"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2c831ae3-97de-42c6-a85d-9a348c6d7db7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eb93d5d-7ae7-4cd5-848e-6bcf2c6813bf">
+                    <propertyInstance
+                      Id="6a837189-4e12-4421-a8da-48f900bfdd1d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a3f20ea-74cf-49ec-b907-6dc0ff4462dc">
+                    <propertyInstance
+                      Id="8402e491-11fa-4e7d-8486-77cf5f144420"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed08094b-513d-4adf-ae87-d880e5e7a41f">
+                    <propertyInstance
+                      Id="e49533a3-823b-499e-a719-58d7f057bb53"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7eef2453-b4bf-44db-ab76-60e7aadce1a6">
+                    <propertyInstance
+                      Id="4f8d6e55-075c-474e-bc88-8a1b4836a12c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f66ed095-927f-4669-bec0-56d7420ea2cd">
+                    <propertyInstance
+                      Id="6e524f4f-c7cc-45f4-b09c-4a15f71897f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="838dc971-b59f-4c5a-980c-8f2580db9e94">
+                    <propertyInstance
+                      Id="04c4cf10-276e-42f4-8725-403aebe42db2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d522ce3-a8f3-485d-a236-4ed8d9b4ea88">
+                    <propertyInstance
+                      Id="1f9fcb6f-509d-4166-b2d7-f692118a9ea4"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="47e5f5f0-e943-4b14-bc61-b7fb54d059b0"
+            name="_length"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5f6d4d84-bb48-4a9f-98bf-9cb2d01a0bbf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3D_length"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81c1ac54-e6db-41a6-8589-6f2982a56985"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d2a3b62-a54b-4be8-a691-2057b6572587">
+                    <propertyInstance
+                      Id="b285aff7-d91a-4f11-9133-9f850965fd08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78ecae17-0d02-4814-934b-ccf4a42f80a1">
+                    <propertyInstance
+                      Id="489c403c-fd41-4db0-87a8-2f0d71ab44d8"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06e153a5-ce64-4e31-b277-192708ce86fc">
+                    <propertyInstance
+                      Id="98889127-e0d6-45b9-b129-bcd56f560b49"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96fbb7bd-a6dd-415d-8f8d-e5b6dc39e4fd">
+                    <propertyInstance
+                      Id="9478c24b-c405-42d5-b56a-3156075fc823"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72c251a0-8872-4580-8fe7-36ef8b849272">
+                    <propertyInstance
+                      Id="a1a58f94-f8b8-437d-b4c4-f9e67cd67695"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7d35bfe8-136f-4008-982a-e267e41d1e19"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1419.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="288f7704-ebce-4ce1-9e88-60db507ae738"
+            name="_boatType"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="bc2ebe34-7a1e-443b-a286-08deaabf7e90"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3D_boatType"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e9ea0fbd-ad7d-44a1-a6b5-bac823e77d34"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8613bee5-9c60-4d00-a13f-d0e82641f896">
+                    <propertyInstance
+                      Id="fc574340-7554-4358-9c11-fa10a14bb4c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fccffed4-7aca-45ea-96ee-dc4427e9b4dd">
+                    <propertyInstance
+                      Id="160ac1c2-87fd-4e83-9463-2bc0a470842c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f53e618-a09d-4d7d-8b7e-00c2b0a629fa">
+                    <propertyInstance
+                      Id="07851472-d2f5-47a8-ba2d-715e8cbc0de1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe7467de-0019-4294-a991-b99344ac3765">
+                    <propertyInstance
+                      Id="241f25af-aa48-4649-bb70-790da536d329"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="047b3080-945a-40c4-a2de-50fea1d0136d">
+                    <propertyInstance
+                      Id="37015dbd-2a33-47cf-8bf2-ddb9379e227a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5f984b63-16f7-4005-82ff-b6df24fb65fc"
+            name="Boat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5360c529-beb2-492d-b088-dce8896f9066"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d8885e8e-ff68-458f-8bc0-4a01cf79e625"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2de8484-4f24-4aac-a6cd-4c248bbf6985">
+                    <propertyInstance
+                      Id="700f7a38-94df-40b5-a963-df72a34a23c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dce822e-9b59-43cd-ae83-2b1c36c5d620">
+                    <propertyInstance
+                      Id="9d9e01e0-df03-42df-b67d-f01c0c620b7c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae8d1cfa-811c-4251-8ac6-4f90ea904834">
+                    <propertyInstance
+                      Id="bc6b133b-b027-449a-94fd-0bd3a7143d26"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef13c070-68c1-4893-af10-73592fe148c9">
+                    <propertyInstance
+                      Id="4e7b1663-bb6b-4424-9cc9-4d95e95fd87c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70989215-91b8-44c8-8133-c1e090e7a960">
+                    <propertyInstance
+                      Id="8825f242-09d6-4b9c-b637-5910a47a6682"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27f55fc8-337c-4737-b9cd-c8da9d9c815b">
+                    <propertyInstance
+                      Id="a1fb736d-28d9-4baf-adb5-c856a29451f8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f0e9fdd2-a6c7-4680-af66-05d937e9c4e3"
+                  name="length"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="65e6539d-e126-466c-b632-6a5dacccc6c6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dlength"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7d35bfe8-136f-4008-982a-e267e41d1e19"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3def9e18-2e51-41ff-ae63-f0c911fd3f95"
+                  name="boatType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5e44a955-63c0-4236-b64a-669370989f80"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DboatType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19d3d4e3-a874-467c-8638-f35cbab87ce9"
+        name="MemberDAL"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9695be10-d8d4-400f-9642-82d3be863776"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2bfd63a7-4608-4379-89fd-629d947ea7fc"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b584b304-f85c-4b33-81b3-18511f78dfa8">
+                <propertyInstance
+                  Id="36ed492b-1f93-42b0-bdef-8305621bbaca"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ac548e0b-3dfe-46c8-89d0-c4856b2cbec8">
+                <propertyInstance
+                  Id="54cf75b3-a576-412e-a558-fe610d80193f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f79dddcf-d71e-4721-8059-abdc270316b8">
+                <propertyInstance
+                  Id="cc720fc3-625d-4e3f-b116-cc7d9c2f0d16"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1c78006-6770-465e-a817-0e06e44e9bc4">
+                <propertyInstance
+                  Id="c7f89430-df89-485a-a2a8-3cdb4975f3d4"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f028e3b4-be0f-49bb-87ae-c04a4c279bfb">
+                <propertyInstance
+                  Id="4d643c30-5188-47b6-a7c5-8c9128b30861"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="36b8617e-bc45-44fa-b39e-9e08ff52a0f6">
+            <classMoniker
+              Id="91f26790-b6d1-46c2-9b49-545afa115111"
+              LastKnownName="Member"
+              LastKnownLocation="Package5_1419.uml" />
+          </dependency>
+          <dependency
+            Id="39b9ed8c-b922-4e2d-9f3a-d9bdac3762e9">
+            <classMoniker
+              Id="f704f641-0522-4916-88db-d7d113b170ed"
+              LastKnownName="Boat"
+              LastKnownLocation="Package5_1419.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1057f295-2a96-4822-bd73-08306d111742"
+            name="_path"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d5d7c2a0-91c0-4388-a2a5-3cb68baa95be"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D_path"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="893b0c1e-c551-4970-beff-73c1f6e2ddf5"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e431678-7a0b-4066-83b1-8ed72e43f47c">
+                    <propertyInstance
+                      Id="7f332db8-7a00-481b-83c2-b955cc8a6dcf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10cf841d-da18-4256-adb0-b00982f3f10d">
+                    <propertyInstance
+                      Id="450cae59-7490-4c27-8e6a-1121e364a1c9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9425b6a-9d08-4acb-ac72-cf47db77b231">
+                    <propertyInstance
+                      Id="db66b142-552c-4fba-9fe4-d34915e9ecb6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8aac44b3-5a37-4a2b-b9b1-9e21e1aed39b">
+                    <propertyInstance
+                      Id="dc671ef8-95e1-422c-b279-b96a807cc710"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3c99a17-db47-4bc9-80ec-dd153a63bc33">
+                    <propertyInstance
+                      Id="709eeb5e-4d00-4879-bc38-1010d03a2660"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b9976d03-73f0-484e-960f-e3a87046dee4"
+            name="sectionMemberName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6580f706-8600-4366-b18c-5056b16af8f2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DsectionMemberName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2d303bd1-5074-48d1-8084-c2f17454a42c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19a85d6f-d7e1-4333-8097-9ee33ca91df9">
+                    <propertyInstance
+                      Id="b85c9983-d483-4006-a8ef-6d8bc85d540d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1547f575-7424-4438-ac9a-82a02cf74d54">
+                    <propertyInstance
+                      Id="69bd83d0-bd59-49ec-adef-239e60a7bcdb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b387b23-a3f7-42bf-96ef-48bd1aa99a00">
+                    <propertyInstance
+                      Id="90bee90c-fc87-49dc-92ba-8baf11292d60"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="579c9cf1-3b08-47fc-bc85-64bfcfc40008">
+                    <propertyInstance
+                      Id="fd8625a2-f04f-4940-8477-e406c88019dc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7693faa5-c841-44a2-9181-c13a51ead4d7">
+                    <propertyInstance
+                      Id="b29c6a2c-e7f0-4734-9f43-112c0846298b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f36dac85-2588-47da-90e8-1c839bc64c66"
+            name="sectionMemberLastName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="89fce9ea-6f6d-40e9-8753-c7ae2849b7e2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DsectionMemberLastName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c853524-4ecd-414c-9c8f-929074a3cd29"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c40494f5-6e79-4bc4-9958-d51c74da71d0">
+                    <propertyInstance
+                      Id="adc27460-6586-4b68-a842-0953bbce1d47"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="157dfc61-75cf-4aa6-a98b-fce0243fdd9e">
+                    <propertyInstance
+                      Id="9208fb37-bfa0-481a-b6fc-8d7699d8d081"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ce001e5-51db-4af2-b301-52086c7fb4e6">
+                    <propertyInstance
+                      Id="1c3825ee-896b-41e9-ad7e-fd6ec01822fc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f42690a0-a470-489b-bfbf-ced421ed3e25">
+                    <propertyInstance
+                      Id="c42c5675-ec6e-45a7-8006-9e757076de0e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8203486-9e7c-41ba-aef4-9a59528b88ee">
+                    <propertyInstance
+                      Id="21b1c0fb-40fb-4378-8a8b-18f094916d9e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="39b3c443-f0de-43c1-a98e-8ed70f26d538"
+            name="sectionMemberID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="baae7d16-9607-4dd7-81e1-831bd4cee7d0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DsectionMemberID"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="526de65c-4287-41e0-8429-849eb6b80d62"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bafdc2e-3e7c-41d6-8ae4-7dd4490cc5d9">
+                    <propertyInstance
+                      Id="f01c3d37-b4ee-48c7-aa60-617d2850d9ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a204faf9-0bc5-4d9f-9de7-d58caf2949b2">
+                    <propertyInstance
+                      Id="b78a2418-cf83-421d-b7df-7a3860e9588a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc74ec5e-7187-414b-94a1-d24988b188d1">
+                    <propertyInstance
+                      Id="9758b24f-393b-4e64-8b36-153c44908f42"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a99de83-f271-4b5d-810a-40be3937eccc">
+                    <propertyInstance
+                      Id="9d65df74-6453-4bf3-a343-5fdcb80091f9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eb9a69b-160e-4a00-a91f-de042b9f1713">
+                    <propertyInstance
+                      Id="056975ed-05f9-4603-9a6b-aabf42b13e50"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f17cadfb-2179-498f-bfac-cbdb18c310ca"
+            name="sectionPersonalNumber"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="83562a2b-acb6-4171-b844-bbc52284478b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DsectionPersonalNumber"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b8bd4ed-6856-408d-af70-f6a86d21057c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67879568-c14d-43a0-a51c-554188f36f78">
+                    <propertyInstance
+                      Id="1b4aa5c3-214a-4f01-9923-d5a6fcba1d47"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20c89c0d-2a5e-4935-b323-44d1052eba72">
+                    <propertyInstance
+                      Id="8b0e6198-84a9-4bbf-b6ef-8cc1744dad8b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f631c124-0036-42f7-97ed-e5ec4f36ebc9">
+                    <propertyInstance
+                      Id="54b566a2-0f25-457e-a485-081141c0c16c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47c1c5d6-84dd-4130-99de-6b2ec6f0824f">
+                    <propertyInstance
+                      Id="d361fade-0419-46cb-8478-563fbb2de583"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="295faa53-f95a-426e-bc83-caa2d918590d">
+                    <propertyInstance
+                      Id="b95dabf1-67fe-406c-9daa-43b735738e10"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b3842d3b-f104-4d1d-a561-5b65c8d2bc5e"
+            name="sectionBoats"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="03d83841-b120-4758-8c6d-ca8d94e83ec9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DsectionBoats"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c97ee050-0fab-4588-9dfd-acff4f597f4d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17e95c1e-67ef-4611-8a04-19a306096125">
+                    <propertyInstance
+                      Id="85b05490-8607-4b70-9138-e2b2696d15e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b09f7bc-737c-4a7b-9073-ca91961f6b8e">
+                    <propertyInstance
+                      Id="ff153b5e-81c0-4e1b-b2a0-cc1793419648"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="439ba49c-2927-4d03-a068-9470fcde0ef3">
+                    <propertyInstance
+                      Id="a44f8f7e-0b2d-40bb-bea8-9bf33440a9ef"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc530cd8-ce43-4a7d-b814-5e26846671dc">
+                    <propertyInstance
+                      Id="06d46b62-5db1-4052-949b-428914a0f015"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2785e68b-c47e-4c98-84d1-9ad1d1ea6c21">
+                    <propertyInstance
+                      Id="e76ed94e-bd78-4166-9551-7d4ee92c62c9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="46d36b06-0800-4ec2-a699-63711db4c80a"
+            name="sectionEnd"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8a791f20-1a2d-4aa2-b799-336963580305"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DsectionEnd"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1336abad-3e8a-46c9-b713-28580d86a117"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f6128ac-9ab5-4f1c-8897-0e61e8884099">
+                    <propertyInstance
+                      Id="319c76ee-1552-4f5d-9d16-843bb76da2e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2241d6c-8edb-4e2a-8003-30c83d06994f">
+                    <propertyInstance
+                      Id="8066da3a-4a9e-4cc7-8823-fc92f81ec453"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2b53168-fdf8-4971-bf4b-490aca5a3689">
+                    <propertyInstance
+                      Id="f2cbaa6a-7eaf-48fa-977e-535cd277ebc5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="046d691a-420f-47a1-875b-2c228e6f0566">
+                    <propertyInstance
+                      Id="b6e77e44-cf59-47df-a3c7-4a8cb6bc657a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f08febf9-006f-47dd-bafa-db0c34db045b">
+                    <propertyInstance
+                      Id="0d0afb62-7dce-49a4-9492-ddc2ac5a8605"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="848da738-bd24-4066-a558-4c00f853c36f"
+            name="Name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4fd453e3-7f7a-48bf-a28d-6354fb672580"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e06cf3c-aa2b-4b4f-a7bf-3f11849f92e1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a65aa2eb-7414-4e14-9fa0-f614545f04bc">
+                    <propertyInstance
+                      Id="99e4bbde-b7e8-4c5f-a007-e719a8675253"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8bc2db7-d001-4592-8909-eeb339da362d">
+                    <propertyInstance
+                      Id="b7f33ef8-0b44-476b-a680-7e60525d9788"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7414fca-5ac2-4420-85eb-c402a2fb9543">
+                    <propertyInstance
+                      Id="ebf6be95-c5af-4546-9d30-c30ec2f0e5fc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af306984-80ad-48f3-bd27-292268699680">
+                    <propertyInstance
+                      Id="64fc1db9-0645-4376-80b3-52cc230608c8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d79fca4e-5ddf-4790-8702-df140c3071d4">
+                    <propertyInstance
+                      Id="036eaa78-0b29-40c8-afe0-d12602df9f3b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8a3bdd9e-eab0-48cb-8496-076d594b3551"
+            name="LastName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e43b6c2f-974e-4182-a533-9f59a80f60f9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DLastName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fbc7a079-0df0-4536-844b-46e10f022a5e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fce59d2-dc19-4336-8fc3-24441dc6b120">
+                    <propertyInstance
+                      Id="ecca7f33-8b06-4dc5-9685-c535eb47633b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d26d8d0c-fde6-434e-bd46-13604c08c6e4">
+                    <propertyInstance
+                      Id="e1954beb-3a13-43ef-9f46-63b42e010de9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="161b359f-5660-4baf-b843-528f124bbda1">
+                    <propertyInstance
+                      Id="30569184-3f26-4885-a2a2-9f93647f6835"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a28ea60-efca-437b-979c-354895a40af4">
+                    <propertyInstance
+                      Id="2dce5d09-75fb-42b2-9277-cce36b3a7186"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e04880a-c362-42eb-b3e7-e17cc22e5d1b">
+                    <propertyInstance
+                      Id="70c1f25f-cd8a-4995-844a-0600d2f4f1ee"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c3c2f22f-5a30-406c-bf8b-9e72cc4f01ce"
+            name="MemberID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1a585fdd-ced5-47a3-a7e6-7fc6f5a82553"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DMemberID"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b7eb96cb-810f-4d57-b27e-500c6cb93569"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31fd2637-f74f-4dce-aa14-6a640e1de7c3">
+                    <propertyInstance
+                      Id="89f173bb-f0f1-44f9-95bb-a7f173503bf3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79a5c429-e18b-4139-a8eb-a3dc75980940">
+                    <propertyInstance
+                      Id="ff5f75a2-9047-4f36-9aec-5d1d14a8f8b5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f16c97f4-ec6c-4d1b-967e-8c8a919c30d6">
+                    <propertyInstance
+                      Id="d4a9368b-8822-43f7-aa23-fb4e9a72dd01"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2bec34b-9a80-411b-b25d-e948d77c8645">
+                    <propertyInstance
+                      Id="7b2403c4-d72e-4c9b-bc7a-22d8c9d79fca"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1ba2895-7a7a-46f1-a9d4-02599c4f8586">
+                    <propertyInstance
+                      Id="efc6d95b-8544-4823-afb4-0b6a5423faba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5392fa16-7dc8-4dff-8cdd-6af60feba3fa"
+            name="PersonalNumber"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="582b8b91-753e-464f-b871-bbcebf234512"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DPersonalNumber"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cc4f1606-0377-41dd-8519-f92d1811d24f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3c205b8-363f-4e89-942f-6eb198785d4c">
+                    <propertyInstance
+                      Id="8cde0c7a-a6b3-404b-b7db-e8ea9a0c11b2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0537bc93-7bb6-4bb7-b12c-6d7afc49e2d2">
+                    <propertyInstance
+                      Id="f40fa21d-42a7-4de9-bd20-850bef994878"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5afb24c1-5cb7-4b63-a9ef-f1a3f021d55f">
+                    <propertyInstance
+                      Id="d63a5ac7-bc24-4c9c-9f1a-8f81954f4d55"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e3ab024-4735-4204-a919-c1adc9a7741f">
+                    <propertyInstance
+                      Id="29d1c76a-a87e-493c-bf1f-51e98407aad9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e11d549-a39f-4395-8c05-f6b161e9e0ff">
+                    <propertyInstance
+                      Id="cc875f03-8766-429c-bd52-dacdc1dc703d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6f904adf-fa08-41cf-bf10-9168aeed22c4"
+            name="Members"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="922ed0d4-ae1b-47c2-936c-4a9ad7e7534d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DMembers"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1d8850cf-5525-447b-aa9f-0d1a6d3389ad"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aed16e8d-61e4-4dba-a798-53af0c7d3c8d">
+                    <propertyInstance
+                      Id="9fdd1d73-acc2-4b23-8a6b-e428d80e3978"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5629dd07-cf25-4d77-b5be-83c534e8d915">
+                    <propertyInstance
+                      Id="ca766ca1-0aa7-47ec-83cf-fbfe18240480"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4e38d84-ad21-46d4-9862-8bed9ec71002">
+                    <propertyInstance
+                      Id="3f431817-d111-457a-9bff-e4db145b83ff"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9663f06-5d7f-422d-99d0-4fc2bcafb1a8">
+                    <propertyInstance
+                      Id="0563662e-dbd5-4c50-be42-650c439e041e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea69b893-f241-4eaf-9c6d-6903c3b1feb4">
+                    <propertyInstance
+                      Id="7ffcedb2-1055-4f04-b7b2-80fa7fb248bf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4ba52a3a-ddc1-434f-ae67-e53c5676b167"
+                LastKnownName="List&lt;Member‎&gt;"
+                LastKnownLocation="Package4_1419.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4f22fc33-c47c-4ba8-85a8-70819d418615"
+            name="MemberBoats"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7f0f7a6f-c047-45d8-8e5d-f65e7fec9113"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DMemberBoats"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b320f9a8-dfd9-4f92-be4c-1f7d27a8c01d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="116a1aed-d4f9-4746-ae8b-5f99de7eaa11">
+                    <propertyInstance
+                      Id="61ace70c-a315-4cba-9019-4a11e31145e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58eaeacf-665e-4b99-a539-5e9cbb4be809">
+                    <propertyInstance
+                      Id="3f6f3ee9-adfa-4bc4-af2f-e5b12f3f5aba"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4b708e8-f760-412f-bb14-0c0da2ab24e3">
+                    <propertyInstance
+                      Id="033a614d-7464-4cfb-9135-ab34fe1abc02"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c1c4771-24ed-49f3-8215-f382944ad67c">
+                    <propertyInstance
+                      Id="a58c6cb4-f71e-4d9f-97cb-adefce727ee9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aefdde2c-7e57-40d4-b4f0-5add75ad9c0f">
+                    <propertyInstance
+                      Id="6af6e3b8-4eec-4a6a-bbb6-1863e73c19d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f2018277-37f3-4ccd-81e1-47b6931578a2"
+                LastKnownName="List&lt;Boat‎&gt;"
+                LastKnownLocation="Package4_1419.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c810f030-61bb-49c4-9a06-91d8c22430c9"
+            name="ReadMembers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dcd8d3bd-b23c-47e3-b0e6-6f10d34df201"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3DReadMembers"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f3dacf06-ee42-4056-bc23-fd77fbe95341"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38e4bc72-0de1-4b88-8366-3f7e294fa3c8">
+                    <propertyInstance
+                      Id="27f42b71-6f52-4dcf-b9c3-58792bef2d5a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fcc42f3-d947-4dce-92be-ab562e601441">
+                    <propertyInstance
+                      Id="adfce819-c69f-4d72-80b8-6917879cc55e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fabda53f-cba4-4b82-8478-bf64a788a821">
+                    <propertyInstance
+                      Id="4234f3ac-ca3b-4aaa-8bbe-234529bbefe5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d9c7412-6723-4820-b0e2-26c5054d0176">
+                    <propertyInstance
+                      Id="0b701a11-c438-45bd-a288-5639d00396db"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed92a3b0-b659-4e87-9974-9dd8a5b0dbea">
+                    <propertyInstance
+                      Id="ebc0ab03-ce83-4795-92e2-2c6ca0580203"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00f1b763-ebab-4ea1-b2c7-77d6ab0f99e8">
+                    <propertyInstance
+                      Id="9588f646-6e24-4d0a-8ec9-65c02ae89b34"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91eb6ff1-f312-4410-b33e-a7e188a0ef42"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ba52a3a-ddc1-434f-ae67-e53c5676b167"
+                      LastKnownName="List&lt;Member‎&gt;"
+                      LastKnownLocation="Package4_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9f0c8919-9050-416b-93e9-1bed8cdd8c8c"
+            name="AddMember"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="32594627-945d-46bc-ae34-12d917dcdf3b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DAddMember OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="281acff0-094c-4e2a-9c44-68be22257433"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be198906-bb9e-4aad-a895-50a1f7aaeee1">
+                    <propertyInstance
+                      Id="bdfa5bfe-d895-4bcc-b06c-0c1a76defbd1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3c74833-42c3-4f32-ba7f-b53b06f0fb66">
+                    <propertyInstance
+                      Id="94a1872a-2584-4dd5-bc20-e60ff25dd59c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c56ebe8d-b6e5-4fbe-8232-e9f1038a418a">
+                    <propertyInstance
+                      Id="c6f273d7-78e1-44a5-ac62-5054eac0eaff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57c3b194-8176-47e4-989d-c1b18b5e602e">
+                    <propertyInstance
+                      Id="91f5805b-7bde-424b-827d-c62eb165da0a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cea2722-bf8c-4176-b9ea-cf7e08bde5f3">
+                    <propertyInstance
+                      Id="95c26269-a881-4ebc-8526-1a9335819faa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="094feddf-6b8c-4ef2-9ab7-7808b930193c">
+                    <propertyInstance
+                      Id="c14db9e3-ae0c-4cd2-998e-57790e2878b0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f1fc05d5-d1fe-45db-aede-c62b78718a5c"
+                  name="member"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="98081e80-e9ed-481b-a5a1-66e851e9d990"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DAddMember OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)]) ParameterIdentifier%3Dmember"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="91f26790-b6d1-46c2-9b49-545afa115111"
+                      LastKnownName="Member"
+                      LastKnownLocation="Package5_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="75cf9a82-5c6c-48c1-ab2a-1cd3ca0cee3a"
+            name="EditMember"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="95a7bbdb-7c47-4ad7-8009-a9a0a84f1639"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DEditMember OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6434071d-9caf-43d0-94c6-8258e96dc8f8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="150f25a0-0541-4805-8eb0-32e2a6cc58a1">
+                    <propertyInstance
+                      Id="d21cbfd1-3f7f-4c2d-85c2-f885c408225b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d7ec7ba-12c0-4446-8c18-424d2f30d4c6">
+                    <propertyInstance
+                      Id="2d0b34ad-02ae-426f-a316-6ee77c4ebaf7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="771b47fa-5c72-4254-926e-0c605588d9c1">
+                    <propertyInstance
+                      Id="e7f6885a-1e79-4766-b730-f4d454e76615"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52df1c05-6b59-42fb-9e53-91c900499ffa">
+                    <propertyInstance
+                      Id="c1b91a88-b758-4e67-94a5-aa4bcecc1056"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0141842a-0785-43c7-b45d-fc53a0f8f9f0">
+                    <propertyInstance
+                      Id="5c0fd4a1-b8f7-426e-8bc9-5829e5a28f93"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccb0ecbb-9ca0-4929-a88c-a594a8286806">
+                    <propertyInstance
+                      Id="c3ec3186-3ac4-4eab-9b35-700c7b820bd5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="beb7e77d-def9-4544-82e5-b471fd93c875"
+                  name="member"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1a7e7987-bc15-4f84-91c3-dedbd25c249b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DEditMember OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)]) ParameterIdentifier%3Dmember"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="91f26790-b6d1-46c2-9b49-545afa115111"
+                      LastKnownName="Member"
+                      LastKnownLocation="Package5_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fafafbe2-bffb-4a61-ab70-15092139704d"
+            name="RemoveMember"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a2413c61-5710-4d16-98d3-637bf3d66949"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DRemoveMember OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3688777-685b-4634-a85c-38e6a9bc39fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="383485af-c0a7-4dbb-bacd-e74125521bef">
+                    <propertyInstance
+                      Id="c2a8eece-667d-47da-b0a2-eb8fc2cb8ef3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="481cef46-deb4-4a18-a275-e9e851259064">
+                    <propertyInstance
+                      Id="b8e5e541-5b56-40c1-aa04-12b741f99406"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bebd065e-11c3-4314-b8ce-dc4e113b9d5f">
+                    <propertyInstance
+                      Id="5be98f44-1038-45a1-8bed-1aa374754411"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2055caa8-85b7-4cdf-ac02-8a568a1ae69e">
+                    <propertyInstance
+                      Id="596aa3c4-1dcd-473b-8ca4-242652219cbf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b22f67f9-1adb-4678-802c-bfbd5f3a27d7">
+                    <propertyInstance
+                      Id="05e1e72a-422b-4753-b42b-1ee1d1e14858"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eb705f8-ebe5-4517-813b-93b945dc6025">
+                    <propertyInstance
+                      Id="709799d3-ffe6-4564-bcdc-f0e2220bf367"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="913275f0-9725-4e5e-8c59-d85c87c6e3b5"
+                  name="member"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2f7548ee-aeab-43a2-a09c-d8aa3e4d5eea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DRemoveMember OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)]) ParameterIdentifier%3Dmember"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="91f26790-b6d1-46c2-9b49-545afa115111"
+                      LastKnownName="Member"
+                      LastKnownLocation="Package5_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="290120be-d0e9-49ee-b3bc-453f505f8d16"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="827daf40-3446-4f3e-924b-e040e7992229"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e220bd20-c94c-40d8-a8ec-5f493337a3da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b80f51b3-cac7-4b14-86bc-79e2b08f4245">
+                    <propertyInstance
+                      Id="69637680-7e41-468a-9ebb-a18c7973233c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5f836b4-0b4a-4e24-b04c-d136e25e7f0a">
+                    <propertyInstance
+                      Id="59032e53-7704-44d0-90b7-ad80b6db4370"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="334500bb-8305-41e8-9d0c-373e0947c38c">
+                    <propertyInstance
+                      Id="d5afb005-2624-4ccb-a588-d30c2101309e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60975553-6353-4e8f-a9ee-187661268a51">
+                    <propertyInstance
+                      Id="28c32313-0dc8-48e3-91ab-a9aca6d5314b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28d4d394-c36c-4308-9068-543103267f9c">
+                    <propertyInstance
+                      Id="7f058bd4-f947-49aa-a2c9-82fad2c76991"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="135af03b-a287-496d-a7ba-f65944ba7d75">
+                    <propertyInstance
+                      Id="006f96b4-0be8-4b08-b3fc-00468855cc7a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f83bda0d-2b0b-4709-935f-1dba85957ded"
+                  name="_members"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f2310cee-1691-474c-acf9-b6de7197c547"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember)]))]) ParameterIdentifier%3D_members"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ba52a3a-ddc1-434f-ae67-e53c5676b167"
+                      LastKnownName="List&lt;Member‎&gt;"
+                      LastKnownLocation="Package4_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7af23ec5-48ab-4956-85d3-b2fbd74bec41"
+            name="MemberDAL"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="575a22c9-76ce-4e69-aac1-e65364c7cd68"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMemberDAL Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9e829174-7289-4ff2-8d02-805279c4cdb0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7bdb006-32d5-496e-81b0-fc0494ce46ab">
+                    <propertyInstance
+                      Id="e7420a60-2ecb-4691-8b55-3b54acb2134b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58ae6e3c-ac92-41cc-85d9-69367fb35ad4">
+                    <propertyInstance
+                      Id="3de388dc-2bc6-41d2-9125-a507b781b084"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6de8c0f0-2f8b-46d7-8b8f-3e02ea8ef097">
+                    <propertyInstance
+                      Id="a70e8851-94c3-4105-b358-bebe9d8e4de3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a43159f-5dd9-4d0f-bf44-c9344890e7eb">
+                    <propertyInstance
+                      Id="fb91cb85-3110-4dfe-8555-ab8fd9a792a1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9633580d-b5f6-423f-8452-11b7af38a7de">
+                    <propertyInstance
+                      Id="0c96f090-b515-48b0-b3aa-cb596911b840"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b964c02c-b35c-4640-bd6b-3d33765346b5">
+                    <propertyInstance
+                      Id="98df1f29-e1c4-4085-a4e2-8f3282d57b6c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="d74dc787-9a86-4242-86f3-ced9edc911f8"
+        name="MemberReadStatus"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="0f86be63-9be3-4019-9e6c-549be763f95c"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="42471a62-e9dc-4fa6-be5f-434e1b676b9f"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="685d7f30-469e-4dbc-b514-95cf9b172533">
+                <propertyInstance
+                  Id="ed6cdb75-4f2e-4610-9854-82a503e2a74a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14d576a5-1114-4d61-b127-2001581d2ade">
+                <propertyInstance
+                  Id="821218ff-8b3b-4646-bb52-18b23f31222a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="65341dd0-0131-44ed-aae4-f9afed87f3b5">
+                <propertyInstance
+                  Id="6d4c98a6-bee5-4aec-9dd5-edc076adb63e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="df58b0d1-4733-44e1-a931-b2e2c61e15fc"
+            name="Indefinite">
+            <referencesInternal>
+              <reference
+                Id="9e4f662e-9a14-4174-9320-b75050dd30c3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL) Member%3DIndefinite"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="4326aef9-cd11-400b-ae07-f6f759115e67"
+            name="MemberFirstName">
+            <referencesInternal>
+              <reference
+                Id="58fc9952-f0a3-41d7-82ff-28818613ec5b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL) Member%3DMemberFirstName"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f3dfdb19-9e31-4ea6-976c-9a4d1d97f6d5"
+            name="MemberLastName">
+            <referencesInternal>
+              <reference
+                Id="821ce762-7c0d-45d8-8b03-27614319db88"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL) Member%3DMemberLastName"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="75122c0c-3701-4c7c-bca0-20a116fa6451"
+            name="MemberID">
+            <referencesInternal>
+              <reference
+                Id="720aa98d-84bb-4355-8632-4e7f7aeb365e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL) Member%3DMemberID"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f6df8ced-7c01-4dd2-a6dd-ea08d6f986e9"
+            name="MemberPersonalNumber">
+            <referencesInternal>
+              <reference
+                Id="184c1ce1-d247-4a97-a127-68c7a8d10338"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL) Member%3DMemberPersonalNumber"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="1b0ff033-0822-4510-811b-031864e0007f"
+            name="Boats">
+            <referencesInternal>
+              <reference
+                Id="4db6c528-ee5f-4fa4-bc2d-b9a7a5200d09"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3D(Name%3DMemberReadStatus ParentType%3DMemberDAL) Member%3DBoats"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="91f26790-b6d1-46c2-9b49-545afa115111"
+        name="Member"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="991ff4b7-163c-408b-b6ec-aa0d6f05037e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="57cd313d-312a-4775-86fc-2a56e564c3b2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2da54709-0b5b-4983-baa6-2a732d968554">
+                <propertyInstance
+                  Id="0f71b5fd-9d53-4aa5-81e2-934a0f99e80a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f78393fe-e827-416e-95d0-5e3101c77e06">
+                <propertyInstance
+                  Id="043749e3-6fde-4336-ae90-a8e9803cd6ab"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06853fbd-b26c-4cd8-9b6d-f02223d6d24e">
+                <propertyInstance
+                  Id="8afd8d66-b07e-431c-9a9e-72fa7461c95a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aa230dd5-a36f-4253-a9d6-ea3b8f66e0e2">
+                <propertyInstance
+                  Id="a9c3b2e6-2e7c-4ff5-9fb1-35a600477bad"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8afd1945-b83e-4f29-b015-74a18bb06aad">
+                <propertyInstance
+                  Id="a9471e91-f111-49f0-8693-88a82aa4a1e5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="3480862d-3246-40c4-8ce7-be68c96f3345"
+            isDerived="false"
+            sourceEndRoleName="Member"
+            targetEndRoleName="Boats"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f2018277-37f3-4ccd-81e1-47b6931578a2"
+              LastKnownName="List&lt;Boat‎&gt;"
+              LastKnownLocation="Package4_1419.uml" />
+            <description>Property Boats references type List&lt;Boat‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7645ed51-f0ba-49cd-bf9c-5785593dc8e1"
+                  name="Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="255b3068-ee64-48e3-a6a8-ee6b3793a519"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6e886b84-5be3-4987-beda-f657cef8cbfc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25b66a79-0fee-4e9c-8877-20d84b40b2cb"
+                  name="Boats"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c4e71a1c-0c1f-4c94-84ee-d3ee92f78884"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7861eb32-30aa-46e9-906e-90edd0253dd7"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="297dd84c-f8d8-4278-99e6-7a86c9b3d519"
+            name="FirstName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="bc02e007-017e-469f-ba94-d4abff4aafcf"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3DFirstName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c209944f-751f-4fcc-a598-48c5d61e18ef"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af978581-a181-4bed-aa93-4fdfb6c84ea3">
+                    <propertyInstance
+                      Id="8cb4194a-3935-4b40-acd8-e496855005a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69ce0b87-bceb-4746-986d-f948597b934e">
+                    <propertyInstance
+                      Id="da97fc67-3067-4034-8239-eda608cdaeac"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75a10011-f57d-46a3-bfae-753f6ebb84a3">
+                    <propertyInstance
+                      Id="215bfedb-ad69-4f3c-bf97-c7d5749f6ddc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6f7875e-c871-4984-a33a-05081faac1e2">
+                    <propertyInstance
+                      Id="8ada81ad-581a-4969-a50e-8229dd883b43"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33725614-cd3f-476b-9c39-06471fbff90f">
+                    <propertyInstance
+                      Id="fdf7b351-3586-4ffe-ae32-bd4764ff66b5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78a5f0e2-99d1-421e-b7f1-b9aa6eb53649">
+                    <propertyInstance
+                      Id="267757bb-d4e8-4017-ad25-119a6f294492"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="499eece4-e05d-4e36-b169-71bce7dcee5b">
+                    <propertyInstance
+                      Id="feb8987f-8284-48ab-86d4-9953962055d4"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b50806ae-898b-4187-ae4b-a154fdc3e5d6"
+            name="LastName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a4b5371b-30e2-413f-8da9-9df27e88e41e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3DLastName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2c0a2f6e-a8cb-40ba-8b33-1431c6fbba41"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8856349c-bb8c-4f57-9ecb-cc7cdb26b510">
+                    <propertyInstance
+                      Id="b3c29b21-3013-4746-a334-859bca819568"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a3e0636-c31f-402e-b44d-dc188542c7d7">
+                    <propertyInstance
+                      Id="d8ec4e2c-3cfc-4041-b735-a83cd80aed97"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0546e07c-7fa3-4ea1-8517-5439a067d5a5">
+                    <propertyInstance
+                      Id="427d623c-35e3-458f-9ece-ff13c16a0dd9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c925f6a2-b336-4ffc-add5-27f3b468eac3">
+                    <propertyInstance
+                      Id="4537afd5-aedc-419e-9683-7144961a8f71"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25ff69f9-d02a-44ec-83d6-1c97d469cf24">
+                    <propertyInstance
+                      Id="26005270-fa0d-4071-88ee-ad3f2e6cfd28"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea06362d-eccb-4ac5-8118-a9b8d092d442">
+                    <propertyInstance
+                      Id="8eace574-4cf1-4d5d-9444-a4ca62b9dc55"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c807d6b-e3d9-44bd-83fe-234f844a6040">
+                    <propertyInstance
+                      Id="afa49581-1680-46fb-b9e0-31dd79035071"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9e24d03a-501c-4474-a1b8-f9704673780a"
+            name="PersonalNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="55f7ecb9-0f1d-43dc-b727-727ecd0bd972"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3DPersonalNumber"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bba89e36-9a2b-4b69-9956-f5c33ffdeea2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25674e21-2d9c-4bbe-a695-826c2af7f9e1">
+                    <propertyInstance
+                      Id="9d16d075-821b-4805-9181-60fc44995dbb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba74bfdf-dfb1-49ad-87ef-4afd54474c1d">
+                    <propertyInstance
+                      Id="926ead59-27c5-482b-8731-6a237e3eaf43"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da0a7759-9639-4db8-a0e3-f94f1e121771">
+                    <propertyInstance
+                      Id="10adee78-b096-4ae1-ae2e-892c0ec5c9d6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8048f5b-2508-4256-ae26-2bfacedad2ca">
+                    <propertyInstance
+                      Id="c9c7c7ac-eb1d-4fcd-9e0a-148d3e791124"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="010cd75f-7436-45bf-8551-bc25e33b0b8d">
+                    <propertyInstance
+                      Id="a006efb4-2131-43a4-b763-185c491efc28"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e21453d-b72c-491f-a053-a6f5c674235e">
+                    <propertyInstance
+                      Id="3c2ffcbe-45df-4fc7-9595-767e643260bc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d95ec45-2723-44b2-ad76-eb18303bd980">
+                    <propertyInstance
+                      Id="53ada7ae-e18b-40a5-97a7-33ad1c269a06"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8a09bf17-07b2-497d-aa46-c44de5df5da7"
+            name="MemberID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1a6eb155-46be-47fd-a105-67b30f2607c5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3DMemberID"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5d4baf38-d01e-4370-8a75-366710fb165b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a13abf81-d213-4b4b-b69a-aeec4b66b004">
+                    <propertyInstance
+                      Id="70e7dace-468f-49ca-972f-b12d229c0134"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74fdd30b-ac31-42f3-bdc9-8aed8a48ac61">
+                    <propertyInstance
+                      Id="b8d9b7e2-44cd-4a92-afcf-28cf7950bc4c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bd9a337-2862-4f4a-a97d-cb320ee8a550">
+                    <propertyInstance
+                      Id="b6fc92a8-68f7-4480-8ffb-1736dbc1dc5f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb17b029-b1ef-4185-8ce5-7497123d3c62">
+                    <propertyInstance
+                      Id="6cb50bc3-d705-40dd-be90-ea0ea0a2a074"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fae14a5-7518-4f61-b89f-0244d5e71c7a">
+                    <propertyInstance
+                      Id="777a9b20-0861-49c7-b83f-ecf9d74a1893"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37789a92-ba49-4433-8298-5020de6997e5">
+                    <propertyInstance
+                      Id="f9a00452-a0d7-4c01-af55-a8e6867a2237"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0eb46fa1-a6e2-4709-adb0-d78c8deb5196">
+                    <propertyInstance
+                      Id="0ed4291e-17d5-4ee0-a4e7-2d649d671817"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="84fbc075-ac2a-42c6-b4f5-e656802a476a"
+            name="Boats"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ef79373d-c36d-4c95-bd31-15ed6d5c8db7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3DBoats"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6deff5e8-424c-407d-8b71-1f37c59e8a37"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01011eff-a751-4e13-aca7-6d74fae0f53a">
+                    <propertyInstance
+                      Id="50018853-f8b4-403a-93fb-e14697eddbda"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60d25c27-6caa-48f0-8587-63c228d79f61">
+                    <propertyInstance
+                      Id="f4a15efd-1ee1-4f38-b8ec-d58514abc3fa"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fdc9257-ae51-4a07-a0ef-3d1682e44ce0">
+                    <propertyInstance
+                      Id="3f535f70-1438-46b2-b404-958a2ee3b726"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fbe7745-3d9b-478e-8eca-9ce3e862edef">
+                    <propertyInstance
+                      Id="1ffc024b-eee8-4962-8d58-361c4a6f8e7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="457cc385-2c1f-4e9d-a460-5826c4c5eebb">
+                    <propertyInstance
+                      Id="b8c7029a-0b23-42b6-815c-c441d5c5d2e4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="568e268b-8fbc-4431-8845-65b64fac0b4f">
+                    <propertyInstance
+                      Id="1af07035-90dc-4c71-81e9-febd33243c30"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55ded761-2c73-4885-8a84-c1e679f22bc1">
+                    <propertyInstance
+                      Id="a81f6195-031e-42a8-9a21-c4f9c91e5adf"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f2018277-37f3-4ccd-81e1-47b6931578a2"
+                LastKnownName="List&lt;Boat‎&gt;"
+                LastKnownLocation="Package4_1419.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="de44f899-908f-46e2-bcb3-4b6ca7c064fe"
+            name="_FirstName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0b6ac7fa-4e5a-405a-8c0f-3f72f29d572f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D_FirstName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e34f8cdb-9c4b-4bff-a6be-f2bb4320e0f9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c71d7f85-8a28-4dfd-a05b-e143e7e765d6">
+                    <propertyInstance
+                      Id="f0388bf4-4602-451f-8ab5-065e62636c45"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e65ec33d-9776-40c4-a6dc-9998c7044442">
+                    <propertyInstance
+                      Id="f063787a-61fb-467e-b35e-5471b085919f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="381b322b-9505-4fc3-b849-deda6f7d369f">
+                    <propertyInstance
+                      Id="94a60cc6-f67d-4b8f-a49e-bd2122cc5ffe"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f44e7ce5-8148-46b2-a147-026cc3f7433e">
+                    <propertyInstance
+                      Id="09acf445-32c1-44a5-94cd-63eecc9ec73f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76a14237-6be1-4d29-b7c4-5a9fdff399cc">
+                    <propertyInstance
+                      Id="64185d9d-d68e-40d8-95cf-55704e08ec65"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="14d2f6e2-23dc-4f53-9a07-6e7f577ed87c"
+            name="_LastName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7a0045a3-2a8b-4ebf-82b5-3079afd3e563"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D_LastName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9a8853b-f745-400e-beae-03438f9e7f52"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd2e819a-8e1b-4f44-8095-c941161fb476">
+                    <propertyInstance
+                      Id="f05b51d6-915b-4ce9-84bc-c210c18bbad9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d1b247b-7448-48e3-b679-92c28d39658b">
+                    <propertyInstance
+                      Id="abc095fc-c637-40fa-a3cb-43893a1cb95a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f64a379-9ee9-46cb-a14a-0c0dbacd58c7">
+                    <propertyInstance
+                      Id="f5150396-cdd9-46d0-97bc-6ec374efc90c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc0e33c3-718b-4101-ad61-472a8f4b090d">
+                    <propertyInstance
+                      Id="06a11450-9296-4be7-8d8c-174d3348db04"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54962df5-f80b-492a-a750-c5dd150bd66f">
+                    <propertyInstance
+                      Id="b01d81d0-b23d-418a-9fb0-a9420e3dcae4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a42f2060-c0cc-41ff-87a3-29661af4fed1"
+            name="_PersonalNr"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9b08a684-ba22-483a-94d8-dfc1f50f055e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D_PersonalNr"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="513bf6e4-e73b-42bc-9157-14b7367dbb17"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8efc01f5-2e31-4956-bbf3-6b49d71e7fe6">
+                    <propertyInstance
+                      Id="6dfbcb17-fa5d-4c20-9057-684aca8e328b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e0fab81-35aa-42fb-8e07-e0664a130911">
+                    <propertyInstance
+                      Id="5da1d3e2-3ec7-4eaf-9b40-60a0442757bf"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76887e42-5e25-40f7-8db7-3ab1f16209e0">
+                    <propertyInstance
+                      Id="78860565-46ec-48a6-91f9-fcc6ee8b233d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca65fc7b-d788-40ba-8d44-a60efa33edd4">
+                    <propertyInstance
+                      Id="bf36bcae-ed40-46ff-a79c-7420422f8894"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f60fcf10-cce8-40b7-bf8b-e6da17f86587">
+                    <propertyInstance
+                      Id="70ea757c-43d5-44c5-b32e-98d858f7ec79"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4fa5240a-8dcc-44e1-ba09-04c94f6f88cd"
+            name="_MemberID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c7bca35a-e501-401f-8d54-7c84de2d6e40"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D_MemberID"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7298f8af-bc5f-4811-8a46-dd51aaa8fdaf"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e53e792d-e998-4df2-97b1-69e572250698">
+                    <propertyInstance
+                      Id="f3b7eab7-b773-419a-ba33-e3ae2eedfbca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ad9b3a1-ae01-4570-a8e4-36fb9825305c">
+                    <propertyInstance
+                      Id="266bc046-ac27-426f-aa02-1352b008e2b2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfe42f2a-ab66-4525-b27d-e105b6cf5829">
+                    <propertyInstance
+                      Id="4ef475b7-68af-489f-8a05-ac615bd04c57"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5260a335-f6b3-4378-bcd1-6d6c427398bf">
+                    <propertyInstance
+                      Id="2ea88a09-2cb0-4b11-be3c-33d8dc487eb6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95ab2ffa-a7f6-4db2-9909-4656452f1f66">
+                    <propertyInstance
+                      Id="f8e488c6-3946-4bb1-93c8-9128bd23f5eb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2d970a74-c9cf-4ec7-b55d-751a574827c8"
+            name="_MemberBoats"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8ccb5d43-d764-4588-88c6-148083847781"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D_MemberBoats"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aa709175-aa08-477e-a5b2-00a5ec3cd212"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faf6218b-4b9d-4cb5-ae67-9258a4a24563">
+                    <propertyInstance
+                      Id="98ba9d12-06c6-4257-83bc-c1b56e245402"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a1746dc-5d6a-428a-9cc7-1aa409640cc2">
+                    <propertyInstance
+                      Id="82375286-7674-4dcc-abe5-6363dbde9d09"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd45721a-aee0-499f-b268-5c9a0eaf40fd">
+                    <propertyInstance
+                      Id="fea64a38-4231-484d-b514-cdb65b87260e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2c3135f-8b2a-4160-bd78-426bfd52a916">
+                    <propertyInstance
+                      Id="2c024259-b3fb-4ecd-92dd-8959b5f3bd06"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16a4f04a-42d1-4ae5-bdea-896eb9e6b8f1">
+                    <propertyInstance
+                      Id="78ace54f-7791-4e8b-b3a0-96572ea31079"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f2018277-37f3-4ccd-81e1-47b6931578a2"
+                LastKnownName="List&lt;Boat‎&gt;"
+                LastKnownLocation="Package4_1419.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3a4e7f98-9257-4c85-b88c-b2953b30aa8e"
+            name="Member"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f4b9df46-f5ac-4dcd-a645-54519b0a00ee"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0cd064e3-174c-49b2-a152-6f34b64f79b1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62f0e882-6275-4daa-a8d0-5b3f14640b9b">
+                    <propertyInstance
+                      Id="64cca5ed-716f-47a2-b7f4-49fd76e1ffa8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ff53edd-a306-4ac0-8912-2c28de5b4608">
+                    <propertyInstance
+                      Id="f4cdf329-a38f-42d7-b760-613c6945610c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb18cd6c-a13f-40b4-840f-9ef7d50b1709">
+                    <propertyInstance
+                      Id="673e5786-10bc-437b-baeb-1bbd29a8c8d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3911769d-5e23-40a6-917c-46da40175c4e">
+                    <propertyInstance
+                      Id="cbafc152-d27b-4a24-8a57-5d9a2450db7c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aed899e-8b89-4560-9ab6-1db59f3b1374">
+                    <propertyInstance
+                      Id="127517d8-6cdd-44fb-8120-e7197297f80c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8deeeec7-66c2-4777-8c00-5470c092bfd0">
+                    <propertyInstance
+                      Id="c5a24211-c6c6-4d9e-94eb-5686b26c775d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="221cbde2-8b37-4549-bad9-fd1174c282b3"
+                  name="_firstName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6e4a28b7-ccca-43cf-b1cd-d65ef6e3ee14"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_firstName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="54a5ccbf-ee0a-47fe-af0c-49d0f7b8a89e"
+                  name="_lastName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ffa38e65-e9fc-4051-ab18-121c3157dce4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_lastName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0592800c-049a-4e0c-af78-8091d18ece40"
+                  name="_personalNr"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1ec6a156-ed2f-445b-9e70-a47aa0e567e3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_personalNr"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="741ac1e8-96ed-4e58-9fd1-4572014abc50"
+            name="Member"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6eb84100-7ec8-4459-ad1f-f648bc8a9859"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b07a7a8-ab35-4c6f-a737-27a103fce938"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97952811-fc91-484b-bfcf-63a3f9c086ca">
+                    <propertyInstance
+                      Id="5a984784-f14c-4dfb-b729-5d08f1492131"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4eef083a-0f12-41fd-a6fd-f20b6a9c1d48">
+                    <propertyInstance
+                      Id="30ae72d2-6b7d-479f-9278-ffb3558dde5e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e37e9552-ee47-4c45-b468-9873e5e8c59a">
+                    <propertyInstance
+                      Id="a48d8aac-8831-40f9-83ed-1d656591df5e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d14002ff-b91f-4351-9295-94dc66570f9d">
+                    <propertyInstance
+                      Id="78730b04-891b-4a28-9727-2bddc4273341"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="016e0dc6-f51f-4c84-98eb-c00f27db02fe">
+                    <propertyInstance
+                      Id="dfcda6e1-6dbc-46b1-84c7-88680a9c6e28"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fda1d34-a9b6-4527-ba82-ce41eb152a7c">
+                    <propertyInstance
+                      Id="7f73da1d-3dfa-4f15-a011-332f365e7db9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c04ee011-4280-4329-a13e-d83b7bf9914c"
+                  name="_firstName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b4a7c9c0-498e-4250-9853-9540df02d1eb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_firstName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="463fd9a7-b2cb-41aa-a32e-dc4c7071d198"
+                  name="_lastName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="191e735c-c4d1-40fa-aae6-34351b0a4307"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_lastName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="779601de-83b8-4112-b59b-6a569b696199"
+                  name="_personalNr"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5bb63b5c-5768-450a-b1e0-afd898109997"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_personalNr"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58fa4449-4cfc-4b99-82e7-091a16b6e77b"
+                  name="_memberBoats"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8b2e5e7e-cbf8-4145-bf4b-b6053524b175"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_memberBoats"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f2018277-37f3-4ccd-81e1-47b6931578a2"
+                      LastKnownName="List&lt;Boat‎&gt;"
+                      LastKnownLocation="Package4_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1b75360-84eb-44f1-97a9-a49eb41cbc1e"
+                  name="_memberID"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6124a3ac-daca-4666-b535-a2b3dc669ae7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D_memberID"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="193f55fc-7760-4310-bc75-1967c2d12249"
+            name="Member"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a07c9703-4233-4010-9adb-bda91a3276a1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dac63b51-2b82-4408-b46a-98c0c4227ed1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b92b7a54-3257-4d71-b273-64c9f00e514c">
+                    <propertyInstance
+                      Id="8de37904-eea1-4c7d-a8d7-36dd46972bb8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b580614-07d1-4184-808f-0bb54b453c33">
+                    <propertyInstance
+                      Id="96de62c7-0ba0-4d2c-896c-7fe0fc5a8924"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="264226bd-cd09-4bfc-b377-f9e85aa7498f">
+                    <propertyInstance
+                      Id="25c5b7b0-3b5e-4e09-9c9f-dda4c1111445"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab5c78a5-28b0-4c21-b929-be4776c94dee">
+                    <propertyInstance
+                      Id="7b54267e-a979-4cd1-9679-ad5e03e1da30"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef82a8ed-bce9-43f4-9ddf-a3695543b74b">
+                    <propertyInstance
+                      Id="03423eb0-189c-4ba8-a431-7f3f3bb9c8db"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="768ced28-09f6-40e3-adec-3524ed6d0a45">
+                    <propertyInstance
+                      Id="8c57ada8-8437-4866-8314-a92ff52f945f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8aa098bd-fffa-4b31-ad7f-e7124c8f9178"
+                  name="_firstName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b2d9d463-9cf3-4e8a-ab55-f493f0b302e3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))]) ParameterIdentifier%3D_firstName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d5822ae-c8b0-4d71-9b27-1e694eddb005"
+                  name="_lastName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="68b8912c-475d-4126-b8c7-b03d0c16c243"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))]) ParameterIdentifier%3D_lastName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e544f0ab-2e08-482d-9014-77d24392a704"
+                  name="_personalNr"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="92f50b53-a051-438e-8804-b7f753b3aa29"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))]) ParameterIdentifier%3D_personalNr"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4501659-a8e9-4406-b1fd-096bd91095e3"
+                  name="_memberBoats"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1016b6e8-236e-4c50-9199-8ee2d619a969"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DMember Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FP:%2F1DV607- Objekt ananlys och design med UML%2FUML%2FWorkshop2%2Fbin%2FDebug%2FWorkshop2.exe&quot; Namespace%3DWorkshop2.model Type%3DBoat)]))]) ParameterIdentifier%3D_memberBoats"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f2018277-37f3-4ccd-81e1-47b6931578a2"
+                      LastKnownName="List&lt;Boat‎&gt;"
+                      LastKnownLocation="Package4_1419.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
