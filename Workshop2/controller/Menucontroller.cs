@@ -31,7 +31,7 @@ namespace Workshop2.controller
             }
             catch
             {
-                view.ErrorMess("Not valid input!");
+                view.NotValidInputError();
             }
         }
 
@@ -53,7 +53,7 @@ namespace Workshop2.controller
                     }
                     catch
                     {
-                        view.ErrorMess("Medlem las inte till för att valideringen inte gick igenom av medlems data.");
+                        view.ValidationError();
                     }
                     Console.Clear();
                     break;
@@ -77,7 +77,7 @@ namespace Workshop2.controller
 	                            }
 	                            catch
 	                            {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
 	                            }
                                 break;
 
@@ -93,7 +93,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
                                 }
                                 break;
 
@@ -108,7 +108,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
                                 }
                                 break;
                         }
@@ -117,7 +117,7 @@ namespace Workshop2.controller
                     }
                     catch
                     {
-                        view.ErrorMess("Kunde inte redigera båt / Person.");
+                        view.EditError();
                     }
                     
                     break;
@@ -137,7 +137,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
                                 }
                                 break;
                             case 2: //TA BORT EN BÅT
@@ -149,7 +149,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
                                 }
                                 break;
                         }
@@ -158,7 +158,7 @@ namespace Workshop2.controller
                     }
                     catch
                     {
-                        view.ErrorMess("Kunde inte redigera båt / Person.");
+                        view.EditError();
                     }
                     Console.Clear();
                     break;
@@ -178,7 +178,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
                                 }
                                 break;
                             case 2: 
@@ -188,7 +188,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something whent wrong when validating the data.");
+                                    view.ValidationError();
                                 }
                                 break;
                             case 3:
@@ -197,7 +197,7 @@ namespace Workshop2.controller
                                 }
                                 catch
                                 {
-                                    view.ErrorMess("Something went wrong, did you write a correct number?");
+                                    view.ValidationError();
                                 }
                                 break;
                         }
@@ -205,7 +205,7 @@ namespace Workshop2.controller
                     catch 
                     {
 
-                        view.ErrorMess("Kunde inte kolla personer, förmoldigen tom databas.\n lägg till medlemmar!");
+                        view.EmptyDataBaseError();
                     }
                     break;
             }
@@ -231,7 +231,7 @@ namespace Workshop2.controller
             }
             catch
             {
-                view.ErrorMess("Fel hände när båt data skrevs in.");
+                view.ValidationError();
             }
 
             return MemberBoats;

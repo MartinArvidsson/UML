@@ -325,11 +325,6 @@ namespace Workshop2.view
             }
         }
 
-        public void ErrorMess(string message) //Errormessages presenteras enligt denna, meddelandena skapas i model.
-        {
-            updateMess = message;
-        }
-
 
         //reads in boat info, info is returned by properties
         public void readBoatInfo() //Funktion för att skapa båtobjekt till en båtlista.
@@ -346,6 +341,28 @@ namespace Workshop2.view
             Console.WriteLine("Length of boat in meters:");
             boatLength = double.Parse(Console.ReadLine());
             typeofboat = diffrentBoatTypes[boatchoice - 1];
+        }
+
+
+        //Error message display.
+        public void NotValidInputError()
+        {
+            Console.WriteLine("Not Valid input.");
+        }
+
+        public void ValidationError()
+        {
+            Console.WriteLine("An error occured when validating the data, please try again.");
+        }
+
+        public void EditError()
+        {
+            Console.WriteLine("Could not edit the member / boat.");
+        }
+
+        public void EmptyDataBaseError()
+        {
+            Console.WriteLine("Could not view members at this moment, the database is probably empty.");
         }
     }
 }
