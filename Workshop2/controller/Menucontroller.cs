@@ -38,7 +38,7 @@ namespace Workshop2.controller
         public void MenuChoice()
         {
             
-            switch (choice) //Huvudmenyns switchsats, CRUD
+            switch (choice) //Mainmenus switch, CRUD
             {
                 case 0: 
                     Environment.Exit(0);
@@ -62,11 +62,11 @@ namespace Workshop2.controller
                     try
                     {
                         Console.Clear();
-                        Member m = view.editperson(memberDAL.ReadMembers()); //Fel här, hämtar ut en lista av ALLA medlemmar, detta leder till att alla båtobjekt kommer med så väljer man t.ex
-                        switch (view.EditMenu())//Person 1 kommer alla båtar även för pers. 2 / 3 hämtas ut via .Boats attributet.
+                        Member m = view.editperson(memberDAL.ReadMembers()); 
+                        switch (view.EditMenu())
                         {
                                 	        
-		                        case 1: //UPDATERA PERSONINFORMATION
+		                        case 1: //updates person data
                                 try
                                 {
                                 view.editPersonalInfo(m);
@@ -81,7 +81,7 @@ namespace Workshop2.controller
 	                            }
                                 break;
 
-                            case 2: //UPDATERA BÅTINFORMATION
+                            case 2: //Updates boat data
                                 try
                                 {
                                     view.editBoatInfo(m);
@@ -101,10 +101,7 @@ namespace Workshop2.controller
                                 try
                                 {
                                     view.AddnewBoat(m);
-                                    m.Boats.Add(new Boat(view.getboatlength, view.getboattype));
-                                    
-                                    //Fuktion för att BARA lägga till en båt tack :3
-                                    //MemberBoats.Add(new Boat(view.getboatlength, view.getboattype));
+                                    m.Boats.Add(new Boat(view.getboatlength, view.getboattype));                                   
                                 }
                                 catch
                                 {
@@ -129,7 +126,7 @@ namespace Workshop2.controller
                         Member toDelete = view.Deletechoice(memberDAL.ReadMembers());
                         switch (view.EditMenu())
                         {
-                            case 1: //TA BORT PERSON
+                            case 1: //removes a member
                                 try{
                                 view.deleteperson(toDelete);
                                 memberDAL.RemoveMember(toDelete);
@@ -140,7 +137,7 @@ namespace Workshop2.controller
                                     view.ValidationError();
                                 }
                                 break;
-                            case 2: //TA BORT EN BÅT
+                            case 2: //removes a boat
                                 try
                                 {
                                     view.DeleteBoat(toDelete);
@@ -214,7 +211,7 @@ namespace Workshop2.controller
         }
 
 
-        private List<Boat> CreateMemberBoats(int amountOfBoats) //SKAPAR BÅTOBJEKT
+        private List<Boat> CreateMemberBoats(int amountOfBoats) //Creates a boat object
         {
             List<Boat> MemberBoats = new List<Boat>(5);
             try

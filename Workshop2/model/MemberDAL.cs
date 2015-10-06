@@ -35,13 +35,6 @@ namespace Workshop2.model
         //Enum of current status for the reader.
         private enum MemberReadStatus { Indefinite, MemberFirstName, MemberLastName, MemberID, MemberPersonalNumber, Boats };
 
-        //constructor
-        public MemberDAL()
-        {
-            //TODO: Maby something in the future.
-            
-        }
-
         //Reads all members in the database.txt file and returns a List of Member objects.
         public List<Member> ReadMembers()
         {
@@ -164,8 +157,7 @@ namespace Workshop2.model
 
             foreach (Member m in CurrMembers)
             {
-                //it is EXREMLY unlikely that the ID's match, BUT if they do it's damn near impossible 
-                //that those persons have the same name
+                //it is EXREMLY unlikely 2 members have the same ID, feel free to check up GUID's odds to generate same ID
                 if (m.MemberID == member.MemberID)
                 {
                     CurrMembers.Remove(m);

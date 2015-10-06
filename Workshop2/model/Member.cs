@@ -55,7 +55,7 @@ namespace Workshop2.model
                     throw new ArgumentNullException("Personal number requires a value.");
                 } 
                 _PersonalNr = value;
-            } //TODO: check if value is a legit personal number
+            } 
         }
         //is read only
         public string MemberID
