@@ -18,4 +18,16 @@ tran
 [MemberPersonalNumber]
 2
 [Boats]
+[MemberName]
+Anton
+[MemberLastName]
+Larsson
+[MemberID]
+13e0e00c-e5e8-4231-93c1-f8bd66e8189e
+[MemberPersonalNumber]
+123123123
+[Boats]
+123;Sailboat
+321;Motorsailer
+123;Sailboat
 [End]

@@ -16,26 +16,6 @@
 </body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="147e1362-036d-45df-b465-452867275a8d">
-      <profileInstance Id="739bb87b-d511-494c-b319-2dd4eaa5bd83" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="002014cc-c41a-4896-b0fe-17326aaf1e3f">
-      <profileInstance Id="4ad25c4e-b4f9-4485-8ec7-e76536c842e2" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4aaa1104-9cb1-4ed3-8a8d-1078ce2e5a81">
-      <profileInstance Id="6714d610-3eb9-4955-9078-279ed52e8887" name="CSharpProfile">
-        <elementDefinition Id="bf2f47b4-066e-4d12-a1f9-7c7501c129b1" />
-      </profileInstance>
-      <elementDefinition Id="4d8ad4e0-55af-4ecb-bc8b-b7fa4bff092f" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="6030033d-da40-4fc9-aa2f-2319903bfc32" name="Menucontroller" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -83,15 +63,49 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="4a04f435-6a90-418c-8cf0-ea82ced3b27c" />
         <suppliersInternal>
-          <dependency Id="7d83c5cb-731e-4635-8394-dd63ed259a41">
-            <classMoniker Id="a43cdfff-5b0e-43fe-8c08-27463dc4d93c" LastKnownName="Menuview" />
-            <elementDefinition Id="452e35fe-5b1b-4d78-b09d-2fe3ff7bc896" />
+          <dependency Id="08bf39f0-86b7-45fd-9fec-04ec8928de06">
+            <classMoniker Id="e11bf0c9-3339-40e1-a3c9-839ffc5f47ef" LastKnownName="Member" />
+            <elementDefinition Id="37f42b97-dde5-480b-834f-5cd7e5558965" />
           </dependency>
-          <dependency Id="981c4a3a-7a99-4ed5-a0f2-abb7351f500e">
-            <classMoniker Id="b46bc22f-d394-4a57-82f0-a1cefaa63791" LastKnownName="MemberDAL" />
-            <elementDefinition Id="0aa4566a-8faf-459e-8140-2cc40026f323" />
+          <dependency Id="9783d76f-c3d3-4ed3-bf91-ebcc5f4dea64">
+            <classMoniker Id="d9042976-ece1-46b1-90c6-0a3cc6f8d824" LastKnownName="Boat" />
+            <elementDefinition Id="34d725e4-3e20-4e74-bc44-c1b17d0c097a" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association Id="d54ef872-e12c-42ec-8d89-1b62fa6d86c1" isDerived="false" sourceEndRoleName="Menucontroller" targetEndRoleName="MemberDAL" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b46bc22f-d394-4a57-82f0-a1cefaa63791" LastKnownName="MemberDAL" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="860e77f2-77ab-4bf8-8f73-d4d6ad5261bb" name="Menucontroller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ff1b16b-6ec0-4500-a8f0-395923fd395f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a173f4ee-d3f7-4abe-a440-d96fe7a14e1b" name="MemberDAL" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="75bd7c27-6697-4904-9b0c-33c0bb7f501f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e994a309-ca00-42b4-aca1-108c4cb48ec6" />
+          </association>
+          <association Id="7a8d33d9-205f-49fa-a4c4-5f57561b80a4" isDerived="false" sourceEndRoleName="Menucontroller" targetEndRoleName="Menuview" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a43cdfff-5b0e-43fe-8c08-27463dc4d93c" LastKnownName="Menuview" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fe0ea7d-a7cf-4410-999f-9589e8a41865" name="Menucontroller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a43cf14f-ab16-48b3-8507-39dac8a3b16d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="955bdcda-0dbb-4f90-96cf-070e4653e983" name="Menuview" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0626a8be-116d-4eb9-950e-a49223f9ba6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5cd66c9-f3ab-47a2-8354-9eb24e692794" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="a0f91878-e1c2-453f-8ac2-a2364189aa3f" name="view" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
@@ -5179,5 +5193,25 @@
   </packagedElements>
   <package Id="817f7b65-0808-4ed7-8e05-c6fedcb828c7" name="ModelingProject1">
     <elementDefinition Id="c389dec8-b67c-474d-b666-beaa8d6b19b4" />
+    <profileInstances>
+      <packageHasProfileInstances Id="147e1362-036d-45df-b465-452867275a8d">
+        <profileInstance Id="739bb87b-d511-494c-b319-2dd4eaa5bd83" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="002014cc-c41a-4896-b0fe-17326aaf1e3f">
+        <profileInstance Id="4ad25c4e-b4f9-4485-8ec7-e76536c842e2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4aaa1104-9cb1-4ed3-8a8d-1078ce2e5a81">
+        <profileInstance Id="6714d610-3eb9-4955-9078-279ed52e8887" name="CSharpProfile">
+          <elementDefinition Id="bf2f47b4-066e-4d12-a1f9-7c7501c129b1" />
+        </profileInstance>
+        <elementDefinition Id="4d8ad4e0-55af-4ecb-bc8b-b7fa4bff092f" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

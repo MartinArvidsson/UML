@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controller\Menucontroller.cs" />
+    <Compile Include="controller\Membercontroller.cs" />
     <Compile Include="model\Boat.cs" />
     <Compile Include="model\Member.cs" />
     <Compile Include="model\MemberDAL.cs" />

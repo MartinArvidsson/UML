@@ -78,20 +78,100 @@
         </appliedStereotypesInternal>
         <suppliersInternal>
           <dependency
-            Id="452e35fe-5b1b-4d78-b09d-2fe3ff7bc896">
+            Id="37f42b97-dde5-480b-834f-5cd7e5558965">
             <classMoniker
-              Id="37325dca-d054-4afb-b4c9-4d43d861f17d"
-              LastKnownName="Menuview"
-              LastKnownLocation="Package6_1419.uml" />
+              Id="91f26790-b6d1-46c2-9b49-545afa115111"
+              LastKnownName="Member"
+              LastKnownLocation="Package5_1419.uml" />
           </dependency>
           <dependency
-            Id="0aa4566a-8faf-459e-8140-2cc40026f323">
+            Id="34d725e4-3e20-4e74-bc44-c1b17d0c097a">
+            <classMoniker
+              Id="f704f641-0522-4916-88db-d7d113b170ed"
+              LastKnownName="Boat"
+              LastKnownLocation="Package5_1419.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="e994a309-ca00-42b4-aca1-108c4cb48ec6"
+            isDerived="false"
+            sourceEndRoleName="Menucontroller"
+            targetEndRoleName="MemberDAL"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="19d3d4e3-a874-467c-8638-f35cbab87ce9"
               LastKnownName="MemberDAL"
               LastKnownLocation="Package5_1419.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ff1b16b-6ec0-4500-a8f0-395923fd395f"
+                  name="Menucontroller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75bd7c27-6697-4904-9b0c-33c0bb7f501f"
+                  name="MemberDAL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e5cd66c9-f3ab-47a2-8354-9eb24e692794"
+            isDerived="false"
+            sourceEndRoleName="Menucontroller"
+            targetEndRoleName="Menuview"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="37325dca-d054-4afb-b4c9-4d43d861f17d"
+              LastKnownName="Menuview"
+              LastKnownLocation="Package6_1419.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a43cf14f-ab16-48b3-8507-39dac8a3b16d"
+                  name="Menucontroller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0626a8be-116d-4eb9-950e-a49223f9ba6a"
+                  name="Menuview"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="40d33b0b-f4de-450f-93b9-2dda896700a6"

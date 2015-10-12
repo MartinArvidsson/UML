@@ -8,14 +8,13 @@ using Workshop2.model;
 
 namespace Workshop2.controller
 {
-    class Menucontroller
+    class Membercontroller
     {
         Menuview view = new Menuview();
         MemberDAL memberDAL = new MemberDAL();
 
         private int choice;
         private int boattoedit;
-        private int boattodelete;
 
         public void Runapplication()
         {

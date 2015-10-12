@@ -11,7 +11,7 @@ namespace Workshop2
     {
         static void Main(string[] args)
         {
-            Menucontroller controller = new Menucontroller();
+            Membercontroller controller = new Membercontroller();
             controller.Runapplication();
         }
     }
