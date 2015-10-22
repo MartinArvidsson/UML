@@ -76,6 +76,15 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="4e388a7f-be7b-4044-9ec2-7bce7feab99f">
+            <classMoniker
+              Id="91f26790-b6d1-46c2-9b49-545afa115111"
+              LastKnownName="Member"
+              LastKnownLocation="Package5_1419.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="56b8da8e-5e34-4dce-980f-a47459237e5e"

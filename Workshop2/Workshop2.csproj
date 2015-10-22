@@ -55,6 +55,7 @@
     <None Include="bin\Debug\Workshop2.exe.config" />
     <None Include="bin\Debug\Workshop2.vshost.exe.config" />
     <None Include="bin\Debug\Workshop2.vshost.exe.manifest" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
   </ItemGroup>
   <ItemGroup>

@@ -606,22 +606,130 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
-        <suppliersInternal>
-          <dependency
-            Id="36b8617e-bc45-44fa-b39e-9e08ff52a0f6">
+        <targetEnds>
+          <association
+            Id="17d61bfb-06da-4157-85f7-561856473ed6"
+            isDerived="false"
+            sourceEndRoleName="MemberDAL"
+            targetEndRoleName="Member"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="91f26790-b6d1-46c2-9b49-545afa115111"
               LastKnownName="Member"
               LastKnownLocation="Package5_1419.uml" />
-          </dependency>
-          <dependency
-            Id="39b9ed8c-b922-4e2d-9f3a-d9bdac3762e9">
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fe4381f-691a-4abd-8033-95cb2ac84994"
+                  name="MemberDAL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="39b1fde2-a27c-4aa5-a18b-12944d05eec4"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4a590ac0-d0e6-4bf7-9d49-ed5f8bae1528"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a72a59d7-b279-4021-a775-0306aaa67fd4"
+                  name="Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="caf05f62-ac6d-4961-8873-107cce04dbdd"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ca1d7d88-4876-40ca-96a8-84e2e846627b"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="499a21b4-a16e-449f-8570-7862ac61c0d9"
+            isDerived="false"
+            sourceEndRoleName="MemberDAL"
+            targetEndRoleName="Boat"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="f704f641-0522-4916-88db-d7d113b170ed"
               LastKnownName="Boat"
               LastKnownLocation="Package5_1419.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="096e83ac-c26e-4c8f-a79f-190a8f275e5c"
+                  name="MemberDAL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="af77d6fb-728b-4612-9b09-b305f55f4b12"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fd6a8c43-d701-403e-b29e-24fad57681bd"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d012538f-cce5-4037-8152-b3014a7a548b"
+                  name="Boat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="76f5ca17-b75a-4b7e-8c21-0f2f862b051c"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6dc5e34d-c420-4158-8a16-eb9f2fd933ff"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="1057f295-2a96-4822-bd73-08306d111742"
@@ -2212,6 +2320,67 @@
                       Id="7861eb32-30aa-46e9-906e-90edd0253dd7"
                       name="Upper"
                       value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f9b5172b-77c8-4c55-bcec-cc32c8aa08b8"
+            isDerived="false"
+            sourceEndRoleName="Member"
+            targetEndRoleName="Boat"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f704f641-0522-4916-88db-d7d113b170ed"
+              LastKnownName="Boat"
+              LastKnownLocation="Package5_1419.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6556cec5-3698-4ec5-92e4-eaf1adb9d45f"
+                  name="Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="78320509-281f-4a96-93ad-4806e7b604f2"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="715cbdd4-6899-4b5f-b3e3-642852dc3c0a"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="593d8cac-98bd-4b06-83e9-ce0fec5fdf1c"
+                  name="Boat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="872bc2f4-8ab6-46c9-bd97-65968137feda"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="109a0605-df47-41c4-9b33-4dc76f98428f"
+                      name="Upper" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>

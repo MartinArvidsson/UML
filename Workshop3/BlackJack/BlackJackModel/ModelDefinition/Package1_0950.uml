@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="611d0dda-1055-4b6d-bca5-9dad81e292a9"
   name="model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -32,13 +32,6 @@
               Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
               LastKnownName="RulesFactory"
               LastKnownLocation="Package2_0950.uml" />
-          </dependency>
-          <dependency
-            Id="bc599c15-e844-43d4-8271-bcd51e76f2f6">
-            <interfaceMoniker
-              Id="26acad98-a5b5-441e-9885-85e8729f66c8"
-              LastKnownName="IGameobserver"
-              LastKnownLocation="Package1_0950.uml" />
           </dependency>
         </suppliersInternal>
         <generalsInternal>
@@ -230,45 +223,6 @@
                       name="Upper" />
                   </upperValueInternal>
                 </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="3e5669bf-9b7d-469c-b7c6-fdfb75e5ae9e"
-            isDerived="false"
-            sourceEndRoleName="Dealer"
-            targetEndRoleName="ItieStrategy"
-            isLeaf="false"
-            isAbstract="false">
-            <interfaceMoniker
-              Id="79be4b77-37fb-47d7-b285-7e30fd5161e1"
-              LastKnownName="ItieStrategy"
-              LastKnownLocation="Package2_0950.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6203451c-a8d8-40a6-a16e-576fcf5f427a"
-                  name="Dealer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a5d35470-d6f1-4200-b4d5-c8df077039ad"
-                  name="ItieStrategy"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -551,23 +505,6 @@
           </association>
         </targetEnds>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <Interface
-        Id="26acad98-a5b5-441e-9885-85e8729f66c8"
-        name="IGameobserver"
-        isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="85309a93-5a27-4705-95a3-e2f3a13027b4">
-            <classMoniker
-              Id="a6713820-b5ef-4e7b-9982-6130438f8429"
-              LastKnownName="Card"
-              LastKnownLocation="Package1_0950.uml" />
-          </dependency>
-        </suppliersInternal>
-      </Interface>
     </packageHasNamedElement>
   </packagedElements>
 </package>
